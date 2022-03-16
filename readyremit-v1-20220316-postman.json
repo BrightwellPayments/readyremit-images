@@ -1,7 +1,7 @@
 {
     "item": [
         {
-            "id": "85125559-2c6d-40bc-ac17-c253c275ce2a",
+            "id": "0d3d124c-edcc-4497-8904-23cbd426f083",
             "name": "Authentication",
             "description": {
                 "content": "",
@@ -9,12 +9,12 @@
             },
             "item": [
                 {
-                    "id": "3fa30db1-7c25-4931-96cb-5c46d2f3be41",
+                    "id": "0f6111bc-d5c0-47a1-823f-6a6eddbcec5f",
                     "name": "Get Access Token",
                     "request": {
                         "name": "Get Access Token",
                         "description": {
-                            "content": "When you sign up to use ReadyRemit, Brightwell provides (for each of your apps) a `client_id`, `client_secret`, `audience`, and `grant_type` which the app trades (via this operation) for an `access_token` for use with other ReadyRemit REST API operations.\n\nNote: You may be viewing this information in SwaggerHub, Postman, or the ReadyRemit API Reference. The latter does not yet support accessing the Auth0 url. \n",
+                            "content": "When you sign up to use ReadyRemit, Brightwell provides (for each of your apps) a `client_id`, `client_secret`, `audience`, and `grant_type` which the app trades (via this operation) for an `access_token` for use with other ReadyRemit REST API operations.\n",
                             "type": "text/plain"
                         },
                         "url": {
@@ -52,7 +52,7 @@
                     },
                     "response": [
                         {
-                            "id": "b8d3de4b-0d07-4d90-987d-1cdb8756a142",
+                            "id": "a80660a5-8b84-4d3b-b682-33582069705f",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -90,7 +90,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "a7b07608-0f66-4185-851b-8aca1d67c19d",
+                            "id": "218e5b88-9cf3-4188-a5f6-eecbefb1281e",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -128,7 +128,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "ad054075-7f83-4ae6-9976-30bb51214641",
+                            "id": "a53d2c44-d273-4ebb-9155-b692e916119d",
                             "name": "Forbidden",
                             "originalRequest": {
                                 "url": {
@@ -175,7 +175,7 @@
             "event": []
         },
         {
-            "id": "37e96027-8559-4b1a-b01b-2954ba808c01",
+            "id": "66810781-e5dd-493c-95b0-ec53225380e2",
             "name": "Banks and Branches",
             "description": {
                 "content": "",
@@ -183,7 +183,7 @@
             },
             "item": [
                 {
-                    "id": "d6abff51-cb67-4d10-98ff-12bba92b114f",
+                    "id": "4a598530-94e4-4b96-9b25-41caf1497778",
                     "name": "Get Banks",
                     "request": {
                         "name": "Get Banks",
@@ -225,7 +225,7 @@
                     },
                     "response": [
                         {
-                            "id": "56df84ca-8754-4c98-8682-d0cd77cc48b4",
+                            "id": "3cf07381-e4a7-4374-b883-a8062f2925ba",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -258,12 +258,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"id\": \"al\",\n    \"name\": \"dolor ea laborum Ut\"\n  },\n  {\n    \"id\": \"anim ullamco\",\n    \"name\": \"dolor ad consectetur\"\n  }\n]",
+                            "body": "[\n  {\n    \"id\": \"sit laboris tempor incididunt id\",\n    \"name\": \"laboris Ut proident occaecat cillum\"\n  },\n  {\n    \"id\": \"consequat ea\",\n    \"name\": \"dolore e\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "1a11d4d3-d4bd-4e9b-bcd9-a6a541224a5e",
+                            "id": "0c0db7eb-85b4-4ac8-97d8-e89146fbc0ad",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -296,7 +296,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"code\": \"KF764\",\n  \"message\": \"ad in\",\n  \"fieldId\": \"et labore fugiat\"\n}",
+                            "body": "{\n  \"code\": \"SG127\",\n  \"message\": \"el\",\n  \"fieldId\": \"aliquip eiusmod incididunt proident\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -304,7 +304,7 @@
                     "event": []
                 },
                 {
-                    "id": "ff60094f-e71b-48e4-93a0-0e1b5f6e8a60",
+                    "id": "02f6a1e2-80ea-404b-bd66-f12135cfc8a0",
                     "name": "Get Bank Branches",
                     "request": {
                         "name": "Get Bank Branches",
@@ -343,7 +343,7 @@
                     },
                     "response": [
                         {
-                            "id": "8c24ffd9-1b7e-410d-8f6f-52b0d33b26f9",
+                            "id": "e4e448da-3713-4fff-bf59-38863af7b25f",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -377,7 +377,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"id\": \"adipisicing ipsum velit non\",\n    \"name\": \"veniam\"\n  },\n  {\n    \"id\": \"dese\",\n    \"name\": \"paria\"\n  }\n]",
+                            "body": "[\n  {\n    \"id\": \"sint\",\n    \"name\": \"nulla do ut veniam\"\n  },\n  {\n    \"id\": \"Duis\",\n    \"name\": \"dolor ipsum\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -388,7 +388,7 @@
             "event": []
         },
         {
-            "id": "0063a4c8-0957-4681-bfae-aa8b02e97db9",
+            "id": "d7d3da41-889f-450c-845a-9328f5964bcd",
             "name": "Helpers",
             "description": {
                 "content": "",
@@ -396,7 +396,7 @@
             },
             "item": [
                 {
-                    "id": "c8bd5c7f-bcd1-4268-9795-7b6bd434bc48",
+                    "id": "1be0a76e-631d-4983-b71c-108ccfb1760a",
                     "name": "Get Countries",
                     "request": {
                         "name": "Get Countries",
@@ -425,7 +425,7 @@
                     },
                     "response": [
                         {
-                            "id": "dd6efa2b-1a75-4942-a3f8-212a8cf985fc",
+                            "id": "43470c9f-d307-437c-b1c5-df4bc7aa1a13",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -449,7 +449,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"country\": {\n      \"iso3Code\": \"DZR\",\n      \"name\": \"sunt dolor aliqua nostrud\"\n    },\n    \"currencies\": [\n      {\n        \"decimalPlaces\": 2,\n        \"iso3Code\": \"XSW\",\n        \"name\": \"incididunt la\",\n        \"symbol\": \"o\"\n      },\n      {\n        \"decimalPlaces\": 1,\n        \"iso3Code\": \"PFR\",\n        \"name\": \"deserunt\",\n        \"symbol\": \"Lor\"\n      }\n    ]\n  },\n  {\n    \"country\": {\n      \"iso3Code\": \"ZKL\",\n      \"name\": \"laborum \"\n    },\n    \"currencies\": [\n      {\n        \"decimalPlaces\": 0,\n        \"iso3Code\": \"CSO\",\n        \"name\": \"pariatur\",\n        \"symbol\": \"lab\"\n      },\n      {\n        \"decimalPlaces\": 0,\n        \"iso3Code\": \"FTU\",\n        \"name\": \"magna occaecat\",\n        \"symbol\": \"el\"\n      }\n    ]\n  }\n]",
+                            "body": "[\n  {\n    \"country\": {\n      \"iso3Code\": \"YXI\",\n      \"name\": \"dolor nostrud ea\"\n    },\n    \"currencies\": [\n      {\n        \"decimalPlaces\": 0,\n        \"iso3Code\": \"WYE\",\n        \"name\": \"cupidatat fugiat dolor\",\n        \"symbol\": \"c\"\n      },\n      {\n        \"decimalPlaces\": 0,\n        \"iso3Code\": \"FFE\",\n        \"name\": \"consequat\",\n        \"symbol\": \"in\"\n      }\n    ]\n  },\n  {\n    \"country\": {\n      \"iso3Code\": \"ZRW\",\n      \"name\": \"Excepteur veniam nisi occaecat aute\"\n    },\n    \"currencies\": [\n      {\n        \"decimalPlaces\": 0,\n        \"iso3Code\": \"TBF\",\n        \"name\": \"irure in cupidatat\",\n        \"symbol\": \"do\"\n      },\n      {\n        \"decimalPlaces\": 1,\n        \"iso3Code\": \"UGJ\",\n        \"name\": \"adipisicing sed\",\n        \"symbol\": \"te\"\n      }\n    ]\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -457,7 +457,7 @@
                     "event": []
                 },
                 {
-                    "id": "726d2086-2dc8-4bb4-b672-5555e2f24224",
+                    "id": "b9c09640-0195-4716-96c8-1f2fa6d755b2",
                     "name": "Get Quote",
                     "request": {
                         "name": "Get Quote",
@@ -523,7 +523,7 @@
                     },
                     "response": [
                         {
-                            "id": "0af13def-b686-4223-a469-b8ec80d3cc97",
+                            "id": "78909790-f210-4875-b116-84fe19d635b7",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -572,7 +572,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"adjustments\": [\n    {\n      \"amount\": {\n        \"value\": 50827000,\n        \"currency\": {\n          \"decimalPlaces\": 0,\n          \"iso3Code\": \"YJU\",\n          \"name\": \"cupidatat dolore id\",\n          \"symbol\": \"sin\"\n        }\n      },\n      \"label\": \"consectetur\"\n    },\n    {\n      \"amount\": {\n        \"value\": 20640679,\n        \"currency\": {\n          \"decimalPlaces\": 0,\n          \"iso3Code\": \"JBA\",\n          \"name\": \"commodo ea elit\",\n          \"symbol\": \"n\"\n        }\n      },\n      \"label\": \"quis qui laboris amet\"\n    }\n  ],\n  \"disclosures\": [\n    \"deserunt pariatur do\",\n    \"consequat\"\n  ],\n  \"rate\": 20308658,\n  \"receiveAmount\": {\n    \"value\": 48852346,\n    \"currency\": {\n      \"decimalPlaces\": 2,\n      \"iso3Code\": \"UAS\",\n      \"name\": \"cillum commodo ad\",\n      \"symbol\": \"am\"\n    }\n  },\n  \"sendAmount\": {\n    \"value\": 91054942,\n    \"currency\": {\n      \"decimalPlaces\": 0,\n      \"iso3Code\": \"QSM\",\n      \"name\": \"ea ad ut aliquip\",\n      \"symbol\": \"mol\"\n    }\n  },\n  \"totalCost\": {\n    \"value\": 11296788,\n    \"currency\": {\n      \"decimalPlaces\": 2,\n      \"iso3Code\": \"BLZ\",\n      \"name\": \"incididunt\",\n      \"symbol\": \"\"\n    }\n  }\n}",
+                            "body": "{\n  \"adjustments\": [\n    {\n      \"amount\": {\n        \"value\": 92395128,\n        \"currency\": {\n          \"decimalPlaces\": 0,\n          \"iso3Code\": \"GTW\",\n          \"name\": \"esse\",\n          \"symbol\": \"do \"\n        }\n      },\n      \"label\": \"commodo\"\n    },\n    {\n      \"amount\": {\n        \"value\": 56282112,\n        \"currency\": {\n          \"decimalPlaces\": 1,\n          \"iso3Code\": \"GWP\",\n          \"name\": \"culpa exercitation sit deserunt\",\n          \"symbol\": \"do\"\n        }\n      },\n      \"label\": \"exercitation Lorem aute minim irure\"\n    }\n  ],\n  \"disclosures\": [\n    \"amet ut veniam dolor ullamco\",\n    \"Ut\"\n  ],\n  \"rate\": 48980981,\n  \"receiveAmount\": {\n    \"value\": 57705218,\n    \"currency\": {\n      \"decimalPlaces\": 1,\n      \"iso3Code\": \"VZA\",\n      \"name\": \"pariatur\",\n      \"symbol\": \"no\"\n    }\n  },\n  \"sendAmount\": {\n    \"value\": 54779304,\n    \"currency\": {\n      \"decimalPlaces\": 2,\n      \"iso3Code\": \"MGQ\",\n      \"name\": \"eu Excepteur\",\n      \"symbol\": \"co\"\n    }\n  },\n  \"totalCost\": {\n    \"value\": 11849699,\n    \"currency\": {\n      \"decimalPlaces\": 1,\n      \"iso3Code\": \"DLE\",\n      \"name\": \"Lorem dolore\",\n      \"symbol\": \"do\"\n    }\n  }\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -583,7 +583,7 @@
             "event": []
         },
         {
-            "id": "0faeb64c-5fcb-4e88-b3d2-90654805fca2",
+            "id": "eeb5f972-972c-422a-9db2-f13ab8466ec6",
             "name": "Recipients",
             "description": {
                 "content": "",
@@ -591,7 +591,7 @@
             },
             "item": [
                 {
-                    "id": "f242cd09-b43c-45c3-88b3-58dc940fa297",
+                    "id": "fd969526-22d9-43ef-b054-4c4bdc9d24a6",
                     "name": "Get Recipient Fields",
                     "request": {
                         "name": "Get Recipient Fields",
@@ -645,7 +645,7 @@
                     },
                     "response": [
                         {
-                            "id": "6dbeddf8-a369-424e-9d0e-4632890f7143",
+                            "id": "be037de7-dbc1-491c-9ecc-9b690e635e82",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -686,7 +686,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"fieldSets\": [\n    {\n      \"fields\": [\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"ad in occaecat\",\n          \"minLength\": -58269149.130054876,\n          \"maxLength\": 87150561.51940224,\n          \"regex\": \"veniam adipisicing aliqua\",\n          \"value\": \"occaecat nostrud laborum\"\n        },\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"ullamco aliqua\",\n          \"minLength\": 98742675.71567455,\n          \"maxLength\": -42550791.92313205,\n          \"regex\": \"in\",\n          \"value\": \"eiusmod aute ut ea\"\n        }\n      ],\n      \"id\": \"ex\",\n      \"name\": \"aliquip dolore labore\"\n    },\n    {\n      \"fields\": [\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"cillum anim Excepteur\",\n          \"minLength\": 64671705.15123087,\n          \"maxLength\": 20046613.787804812,\n          \"regex\": \"id eu pariatur minim sed\",\n          \"value\": \"laboris dolore\"\n        },\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"velit\",\n          \"minLength\": -89956178.25680596,\n          \"maxLength\": 95587529.12478733,\n          \"regex\": \"nostrud c\",\n          \"value\": \"sunt exercitation Duis ut\"\n        }\n      ],\n      \"id\": \"Lorem\",\n      \"name\": \"dolor laboris mollit pariatur\"\n    }\n  ]\n}",
+                            "body": "{\n  \"fieldSets\": [\n    {\n      \"fields\": [\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"amet eu enim sint\",\n          \"minLength\": -44209659.75149822,\n          \"maxLength\": 6713117.262723848,\n          \"regex\": \"id ullamco\",\n          \"value\": \"consectetur do enim magna\"\n        },\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"veniam magna tempor aliqua\",\n          \"minLength\": -97471467.91018997,\n          \"maxLength\": 47662909.389170825,\n          \"regex\": \"pariatur Duis sed consectetur\",\n          \"value\": \"in proident\"\n        }\n      ],\n      \"id\": \"nisi labore\",\n      \"name\": \"non labore pariatur anim magna\"\n    },\n    {\n      \"fields\": [\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"ex\",\n          \"minLength\": 24589457.30618334,\n          \"maxLength\": -68871151.87598063,\n          \"regex\": \"do labo\",\n          \"value\": \"officia dolor\"\n        },\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"Excepteur amet\",\n          \"minLength\": 94566113.65812391,\n          \"maxLength\": 62236912.389788866,\n          \"regex\": \"labore\",\n          \"value\": \"reprehenderit exercitation esse consequat ullamc\"\n        }\n      ],\n      \"id\": \"mollit adipisicing aliquip in cillum\",\n      \"name\": \"cupidatat est aliquip veniam velit\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -694,7 +694,7 @@
                     "event": []
                 },
                 {
-                    "id": "c7ba9934-d7bd-4189-8882-e5b3e69725c3",
+                    "id": "8233b7bb-32ec-4d0a-8a9f-4aec6327bb99",
                     "name": "Get Recipients",
                     "request": {
                         "name": "Get Recipients",
@@ -730,7 +730,7 @@
                     },
                     "response": [
                         {
-                            "id": "fba548aa-b66c-4f49-a9dc-27711e90a86f",
+                            "id": "d3dacf2f-2367-433f-b006-1df25ad0bf3d",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -759,7 +759,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"recipientId\": \"commodo magna\",\n    \"senderId\": \"veniam sint\",\n    \"firstName\": \"Excepteur ea elit ad\",\n    \"lastName\": \"cillum \",\n    \"fields\": [\n      {\n        \"id\": \"non eiusmod laborum f\",\n        \"type\": \"TEXT\",\n        \"value\": \"cupidatat reprehenderit commodo velit\"\n      },\n      {\n        \"id\": \"nisi dolore nulla\",\n        \"type\": \"TEXT\",\n        \"value\": \"do dolore ullamco nisi\"\n      }\n    ]\n  },\n  {\n    \"recipientId\": \"sint consectetur\",\n    \"senderId\": \"consectetur in\",\n    \"firstName\": \"Lorem dolor velit\",\n    \"lastName\": \"incididunt tempor veniam ad\",\n    \"fields\": [\n      {\n        \"id\": \"dolore cillum minim\",\n        \"type\": \"TEXT\",\n        \"value\": \"sed sit\"\n      },\n      {\n        \"id\": \"occaecat ipsum\",\n        \"type\": \"TEXT\",\n        \"value\": \"consequ\"\n      }\n    ]\n  }\n]",
+                            "body": "[\n  {\n    \"recipientId\": \"velit ipsum in occaecat\",\n    \"senderId\": \"dolore sed irure\",\n    \"firstName\": \"nisi qui eu consectetur\",\n    \"lastName\": \"sit ullamco Excepteur ad\",\n    \"fields\": [\n      {\n        \"id\": \"dolore qui elit ut eiusmod\",\n        \"type\": \"TEXT\",\n        \"value\": \"irure est\"\n      },\n      {\n        \"id\": \"nostrud ipsum\",\n        \"type\": \"TEXT\",\n        \"value\": \"Duis\"\n      }\n    ]\n  },\n  {\n    \"recipientId\": \"culpa Lorem\",\n    \"senderId\": \"aute proident\",\n    \"firstName\": \"veniam anim commodo incididunt id\",\n    \"lastName\": \"labore non\",\n    \"fields\": [\n      {\n        \"id\": \"deserunt dolore in minim\",\n        \"type\": \"TEXT\",\n        \"value\": \"magna est ex\"\n      },\n      {\n        \"id\": \"et tempor e\",\n        \"type\": \"TEXT\",\n        \"value\": \"enim deserunt eiusmod et\"\n      }\n    ]\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -767,7 +767,7 @@
                     "event": []
                 },
                 {
-                    "id": "486d1050-fe82-4561-9f89-a14fd5d5158d",
+                    "id": "cb9b8232-4fea-4a8c-bcc6-9c55e51179ba",
                     "name": "Create Recipient",
                     "request": {
                         "name": "Create Recipient",
@@ -809,7 +809,7 @@
                     },
                     "response": [
                         {
-                            "id": "a287adc4-7398-4902-8af4-461243df5234",
+                            "id": "7922a00e-b2cd-4f48-9f3f-659bd3182c13",
                             "name": "Created",
                             "originalRequest": {
                                 "url": {
@@ -841,12 +841,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipientId\": \"consectetur dol\",\n  \"senderId\": \"minim sunt tempor dolor\",\n  \"firstName\": \"do tempor id laboris\",\n  \"lastName\": \"eiusmod elit dolore dolor veniam\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "body": "{\n  \"recipientId\": \"Lorem magna aliqua aliquip repr\",\n  \"senderId\": \"sed consectetur\",\n  \"firstName\": \"ad Excepteur in do\",\n  \"lastName\": \"exercitation qui irure Lorem\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "fe43a9a9-520a-4b30-abbf-4c0b05a11777",
+                            "id": "50f3ea8d-4d63-42b8-af48-8380b5e05662",
                             "name": "Invalid or missing data",
                             "originalRequest": {
                                 "url": {
@@ -878,7 +878,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"IU384\",\n    \"message\": \"amet consequat\",\n    \"fieldId\": \"Duis Excepteur\"\n  },\n  {\n    \"code\": \"CT975\",\n    \"message\": \"voluptate occaecat nulla\",\n    \"fieldId\": \"dol\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"FV421\",\n    \"message\": \"occaecat in laboris dolor\",\n    \"fieldId\": \"nisi laborum exercitation non\"\n  },\n  {\n    \"code\": \"DH208\",\n    \"message\": \"Excepteur ut nisi quis\",\n    \"fieldId\": \"occaecat non id pariatur nulla\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -889,7 +889,7 @@
                     }
                 },
                 {
-                    "id": "13914086-36ae-4373-8b86-88e644af863c",
+                    "id": "62f0692b-b60b-4171-bf05-ab5eb74bc3b3",
                     "name": "Get Recipient",
                     "request": {
                         "name": "Get Recipient",
@@ -927,7 +927,7 @@
                     },
                     "response": [
                         {
-                            "id": "ce84a095-1696-41e3-ab75-4db7043843f9",
+                            "id": "3bb5d516-f524-4aea-8327-a7d6717885e2",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -960,7 +960,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipientId\": \"consectetur dol\",\n  \"senderId\": \"minim sunt tempor dolor\",\n  \"firstName\": \"do tempor id laboris\",\n  \"lastName\": \"eiusmod elit dolore dolor veniam\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "body": "{\n  \"recipientId\": \"Lorem magna aliqua aliquip repr\",\n  \"senderId\": \"sed consectetur\",\n  \"firstName\": \"ad Excepteur in do\",\n  \"lastName\": \"exercitation qui irure Lorem\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -968,7 +968,7 @@
                     "event": []
                 },
                 {
-                    "id": "397d9720-bb97-489c-a71b-6de8d421d788",
+                    "id": "31124123-8c0f-4c37-82e7-05b0ded225d0",
                     "name": "Update Recipient",
                     "request": {
                         "name": "Update Recipient",
@@ -1019,7 +1019,7 @@
                     },
                     "response": [
                         {
-                            "id": "6de04d98-7e8b-4dc5-b1c4-f61c3bac1b9b",
+                            "id": "678b216e-868c-4ba4-ad5b-4fec772c2877",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1060,7 +1060,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipientId\": \"consectetur dol\",\n  \"senderId\": \"minim sunt tempor dolor\",\n  \"firstName\": \"do tempor id laboris\",\n  \"lastName\": \"eiusmod elit dolore dolor veniam\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "body": "{\n  \"recipientId\": \"Lorem magna aliqua aliquip repr\",\n  \"senderId\": \"sed consectetur\",\n  \"firstName\": \"ad Excepteur in do\",\n  \"lastName\": \"exercitation qui irure Lorem\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -1071,7 +1071,7 @@
                     }
                 },
                 {
-                    "id": "58bc7058-e7c6-4759-ba2d-91d29a79d7bf",
+                    "id": "b4cfaa8f-151c-407f-b648-4676aef7c812",
                     "name": "Delete Recipient",
                     "request": {
                         "name": "Delete Recipient",
@@ -1103,7 +1103,7 @@
                     },
                     "response": [
                         {
-                            "id": "642e63ce-714f-45d4-8a60-035e61419277",
+                            "id": "c4c0aa6f-8032-405e-bd79-572ab0b2cb75",
                             "name": "200 Success",
                             "originalRequest": {
                                 "url": {
@@ -1147,7 +1147,7 @@
             "event": []
         },
         {
-            "id": "3bca2225-7172-4ded-aabc-504348eecd04",
+            "id": "d70a69fd-0b14-47b9-9325-a1fd6c7def19",
             "name": "Recipient Accounts",
             "description": {
                 "content": "",
@@ -1155,7 +1155,7 @@
             },
             "item": [
                 {
-                    "id": "add26f9d-9eae-43e5-a255-bd7b019c810a",
+                    "id": "dbb03495-7f43-4fe4-a83f-e02ee25ab250",
                     "name": "Get Recipient Account Fields",
                     "request": {
                         "name": "Get Recipient Account Fields",
@@ -1209,7 +1209,7 @@
                     },
                     "response": [
                         {
-                            "id": "e19158dd-a460-4f4a-aecb-af749f2a1858",
+                            "id": "d2aeb759-8c24-476a-9d0e-8b0f0dbc42a6",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1250,7 +1250,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"fieldSets\": [\n    {\n      \"fields\": [\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"ad sunt veniam consectetur\",\n          \"minLength\": -59070387.470954254,\n          \"maxLength\": -57927296.08246727,\n          \"regex\": \"proident in amet elit\",\n          \"value\": \"esse aliqua\"\n        },\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"ea Excepteur quis irure\",\n          \"minLength\": 4843927.744945109,\n          \"maxLength\": -95796421.02028859,\n          \"regex\": \"consequat ea\",\n          \"value\": \"sint in id laboris\"\n        }\n      ],\n      \"id\": \"adipisicing tempor sunt ut eiusmod\",\n      \"name\": \"Lorem\"\n    },\n    {\n      \"fields\": [\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"dolor\",\n          \"minLength\": 65635560.53376046,\n          \"maxLength\": -9655570.654775798,\n          \"regex\": \"tempor mollit aliquip nulla\",\n          \"value\": \"magna dolor velit\"\n        },\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"nostrud Duis ei\",\n          \"minLength\": -96141968.53177655,\n          \"maxLength\": -64273110.3307403,\n          \"regex\": \"exercitation do\",\n          \"value\": \"nulla qui nisi enim\"\n        }\n      ],\n      \"id\": \"pariatur ipsum\",\n      \"name\": \"aliquip reprehenderit nisi\"\n    }\n  ]\n}",
+                            "body": "{\n  \"fieldSets\": [\n    {\n      \"fields\": [\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"ut dolore velit pariatur\",\n          \"minLength\": -9930508.235347226,\n          \"maxLength\": 44386196.64711818,\n          \"regex\": \"eu dolor aliquip\",\n          \"value\": \"reprehenderit est\"\n        },\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"aliquip tempor\",\n          \"minLength\": -53581671.23601057,\n          \"maxLength\": 23566558.289870754,\n          \"regex\": \"dolor \",\n          \"value\": \"ullamco laboris dolore deserun\"\n        }\n      ],\n      \"id\": \"Duis et dolore\",\n      \"name\": \"cupidatat Ut\"\n    },\n    {\n      \"fields\": [\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"anim velit\",\n          \"minLength\": 97721396.0486699,\n          \"maxLength\": 90304269.56417263,\n          \"regex\": \"magna aute id\",\n          \"value\": \"anim do non velit dolor\"\n        },\n        {\n          \"fieldType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"id\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"required\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"validationErrors\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"hintText\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"placeholderText\": \"id culpa deserunt mollit\",\n          \"minLength\": -15738811.20471996,\n          \"maxLength\": -9599659.178230315,\n          \"regex\": \"id quis sunt\",\n          \"value\": \"amet incididunt id magna\"\n        }\n      ],\n      \"id\": \"qui\",\n      \"name\": \"pariatur dolore occaecat ut ex\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -1258,7 +1258,7 @@
                     "event": []
                 },
                 {
-                    "id": "7bdcc2e6-c82c-4220-927b-7d4d6a8e6b6f",
+                    "id": "3f5a85d5-31c9-47d7-894c-2e78e91ac7b1",
                     "name": "Get Recipient Accounts",
                     "request": {
                         "name": "Get Recipient Accounts",
@@ -1291,7 +1291,7 @@
                     },
                     "response": [
                         {
-                            "id": "446d807f-5789-48c3-9385-4ab4fa108d99",
+                            "id": "91d8efd2-6aaf-4ad3-bbd9-5fa414392ab3",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1333,7 +1333,7 @@
                     "event": []
                 },
                 {
-                    "id": "ce59571e-201f-4736-b53e-0f167716e818",
+                    "id": "f03e0e38-cf11-4ca2-9dee-d06c1a19de6d",
                     "name": "Create Recipient Account",
                     "request": {
                         "name": "Create Recipient Account",
@@ -1372,7 +1372,7 @@
                     },
                     "response": [
                         {
-                            "id": "9fab46ef-eebf-4812-a2b1-ff44c12e1edf",
+                            "id": "8cb87c6c-1972-46a1-bf9c-7d848b6b02d0",
                             "name": "Created",
                             "originalRequest": {
                                 "url": {
@@ -1411,7 +1411,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "c53534e6-bb8e-4958-8a32-eeaa1e0f3b0b",
+                            "id": "c6e13615-130c-48c3-833a-88657fb33bc3",
                             "name": "Invalid or missing data",
                             "originalRequest": {
                                 "url": {
@@ -1445,7 +1445,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"IU384\",\n    \"message\": \"amet consequat\",\n    \"fieldId\": \"Duis Excepteur\"\n  },\n  {\n    \"code\": \"CT975\",\n    \"message\": \"voluptate occaecat nulla\",\n    \"fieldId\": \"dol\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"FV421\",\n    \"message\": \"occaecat in laboris dolor\",\n    \"fieldId\": \"nisi laborum exercitation non\"\n  },\n  {\n    \"code\": \"DH208\",\n    \"message\": \"Excepteur ut nisi quis\",\n    \"fieldId\": \"occaecat non id pariatur nulla\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -1453,7 +1453,7 @@
                     "event": []
                 },
                 {
-                    "id": "1fedfa3a-4fb5-4952-a180-171ffdc05581",
+                    "id": "5a1d6190-0e05-4c74-9cdd-b30227c2b40e",
                     "name": "Get Recipient Account",
                     "request": {
                         "name": "Get Recipient Account",
@@ -1494,7 +1494,7 @@
                     },
                     "response": [
                         {
-                            "id": "28537281-4565-439a-bea4-15d4d3dbf4e4",
+                            "id": "470da612-1ce8-4d40-b2b6-8476b1f4962a",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1544,7 +1544,7 @@
                     "event": []
                 },
                 {
-                    "id": "b7093d9d-a217-45c1-ab67-aafab03e2e57",
+                    "id": "99007a06-97e6-4c95-a88e-87140637f044",
                     "name": "Update Recipient Account",
                     "request": {
                         "name": "Update Recipient Account",
@@ -1591,7 +1591,7 @@
                     },
                     "response": [
                         {
-                            "id": "047a8637-fec8-43c1-907b-5bca374fe3b9",
+                            "id": "1c4dd4cd-daac-46fc-8b8a-1e5ab77231a7",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1633,12 +1633,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"id\": \"sint nulla\",\n  \"fields\": [\n    {\n      \"id\": \"enim minim\",\n      \"type\": \"TEXT\",\n      \"value\": \"adipisicing laboris sunt quis velit\"\n    },\n    {\n      \"id\": \"aliqua adipisicing\",\n      \"type\": \"TEXT\",\n      \"value\": \"adipisicing Duis dolor proident elit\"\n    }\n  ]\n}",
+                            "body": "{\n  \"id\": \"irure\",\n  \"fields\": [\n    {\n      \"id\": \"occaecat officia Excepteur consectetur qui\",\n      \"type\": \"TEXT\",\n      \"value\": \"magna esse laborum eu\"\n    },\n    {\n      \"id\": \"laborum minim Lo\",\n      \"type\": \"TEXT\",\n      \"value\": \"veniam sed\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "bd7e2271-1d06-4e2f-a7d3-47806ca43298",
+                            "id": "0f6f051f-4963-464f-be31-f08f07c9bd9d",
                             "name": "Invalid or missing data",
                             "originalRequest": {
                                 "url": {
@@ -1680,7 +1680,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"IU384\",\n    \"message\": \"amet consequat\",\n    \"fieldId\": \"Duis Excepteur\"\n  },\n  {\n    \"code\": \"CT975\",\n    \"message\": \"voluptate occaecat nulla\",\n    \"fieldId\": \"dol\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"FV421\",\n    \"message\": \"occaecat in laboris dolor\",\n    \"fieldId\": \"nisi laborum exercitation non\"\n  },\n  {\n    \"code\": \"DH208\",\n    \"message\": \"Excepteur ut nisi quis\",\n    \"fieldId\": \"occaecat non id pariatur nulla\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -1688,7 +1688,7 @@
                     "event": []
                 },
                 {
-                    "id": "b9c1eefe-004e-4b8a-8d87-bae5c017aae8",
+                    "id": "41cdbb4d-f252-4da2-87da-af559a03e2d0",
                     "name": "Delete Recipient Account",
                     "request": {
                         "name": "Delete Recipient Account",
@@ -1735,7 +1735,7 @@
                     },
                     "response": [
                         {
-                            "id": "86675044-0b16-4351-bf61-3753f9cbe950",
+                            "id": "3a032c46-2f71-47d2-957a-476f076c6e0d",
                             "name": "200 Success",
                             "originalRequest": {
                                 "url": {
@@ -1782,7 +1782,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "a9f0bcec-9023-48a0-babb-e01a0ce23e26",
+                            "id": "fa40f053-2365-4ddc-b5d1-ce824c2aee07",
                             "name": "400 Invalid",
                             "originalRequest": {
                                 "url": {
@@ -1824,7 +1824,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"IU384\",\n    \"message\": \"amet consequat\",\n    \"fieldId\": \"Duis Excepteur\"\n  },\n  {\n    \"code\": \"CT975\",\n    \"message\": \"voluptate occaecat nulla\",\n    \"fieldId\": \"dol\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"FV421\",\n    \"message\": \"occaecat in laboris dolor\",\n    \"fieldId\": \"nisi laborum exercitation non\"\n  },\n  {\n    \"code\": \"DH208\",\n    \"message\": \"Excepteur ut nisi quis\",\n    \"fieldId\": \"occaecat non id pariatur nulla\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -1835,7 +1835,7 @@
             "event": []
         },
         {
-            "id": "57c0d442-beb1-4266-9762-4d41a7d736c4",
+            "id": "81c0a99c-c4c3-4bbe-b928-f497435fa59c",
             "name": "Transfers",
             "description": {
                 "content": "",
@@ -1843,7 +1843,7 @@
             },
             "item": [
                 {
-                    "id": "cf41aae1-a70c-4e38-848b-0dee314b7bf9",
+                    "id": "24c094df-8fe9-433a-87c9-897fc8e7e54e",
                     "name": "Execute Transfer",
                     "request": {
                         "name": "Execute Transfer",
@@ -1872,7 +1872,7 @@
                     },
                     "response": [
                         {
-                            "id": "1a016de1-e4f8-484e-b505-32b58afc1bba",
+                            "id": "592a021b-a796-4122-81fa-20102236a2c9",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1901,7 +1901,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "144aafd4-0898-4f8a-b49e-6500adc26c27",
+                            "id": "789b24d0-581f-4a53-a56c-481f526fc72a",
                             "name": "Invalid or missing data",
                             "originalRequest": {
                                 "url": {
@@ -1925,7 +1925,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"JK390\",\n    \"message\": \"consequat veniam tempor irure\",\n    \"fieldId\": \"dolor in\"\n  },\n  {\n    \"code\": \"RK949\",\n    \"message\": \"do\",\n    \"fieldId\": \"reprehenderit quis cupidatat\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"QO499\",\n    \"message\": \"magna ea esse adipisicing id\",\n    \"fieldId\": \"ipsum\"\n  },\n  {\n    \"code\": \"ZJ755\",\n    \"message\": \"deserunt ullamco exercitation do sit\",\n    \"fieldId\": \"occaecat\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -1959,11 +1959,11 @@
         ]
     },
     "info": {
-        "_postman_id": "468e41f3-6686-4eba-aceb-442485123ec6",
+        "_postman_id": "0f9b2c4e-578b-4d35-a307-5c6b295653da",
         "name": "API Reference",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {
-            "content": "See the [ReadyRemit v1 2022-03-16](https://developer.readyremit.com/changelog/readyremit-v1-2022-03-16).",
+            "content": "See the [ReadyRemit Developer Portal](https://developer.readyremit.com/).",
             "type": "text/plain"
         }
     }
