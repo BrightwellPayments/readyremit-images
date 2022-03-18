@@ -410,6 +410,7 @@ paths:
               examples:
                 Forbidden:
                   summary: Forbidden
+                  description: If you pass a legally formatted, but non-existent `senderId`, this operation returns this status code and response body. It probably should return 404 Not Found.
                   value:
                   - code: AccessDenied
                     message: ¡Lo siento! Acceso denegado :(
@@ -421,6 +422,7 @@ paths:
       description: This operation creates a recipient record.
       operationId: createRecipient
       requestBody:
+        description: This is the description.
         content:
           application/json:
             schema:
@@ -719,7 +721,7 @@ paths:
       parameters:
       - name: id
         in: path
-        description: Recipient identifier.
+        description: Recipient ID
         required: true
         style: simple
         explode: false
@@ -737,58 +739,15 @@ paths:
       parameters:
       - name: id
         in: path
-        description: Recipient identifier.
+        description: Recipient ID
         required: true
         style: simple
         explode: false
         schema:
           type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/createRecipientAccountRequest'
-            example:
-              dstCountryIso3Code: IND
-              dstCurrencyIso3Code: INR
-              transferMethod: BANK_ACCOUNT
-              senderId: 85add64d-1e36-4acb-84e1-2de9b5644001
-              recipientId: 4e6e2df5-ee18-451a-b238-dba4b3b3c394
-              name: Destination Account
-              accountNumber: "98237498327489273"
-              fields:
-              - id: bankId
-                type: NUMBER
-                value: "78"
-              - id: branchId
-                type: NUMBER
-                value: "99"
-              - id: accountNumber
-                type: TEXT
-                value: "1234556677"
       responses:
         "201":
           description: Created
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/recipientAccount'
-              examples:
-                Success:
-                  summary: Success
-                  value:
-                    recipientAccountId: e27c7395-b46a-4b9b-89fd-cd6a3da7fd85
-                    accountNumber: "98237498327489273"
-                    fields:
-                    - id: bankId
-                      type: NUMBER
-                      value: "78"
-                    - id: branchId
-                      type: NUMBER
-                      value: "99"
-                    - id: accountNumber
-                      type: TEXT
-                      value: "1234556677"
         "400":
           description: Bad Request
           content:
@@ -936,27 +895,6 @@ components:
         transferMethod:
           $ref: '#/components/schemas/transferMethods'
         senderId:
-          type: string
-        fields:
-          type: array
-          items:
-            $ref: '#/components/schemas/fieldValue'
-    createRecipientAccountRequest:
-      type: object
-      properties:
-        dstCountryIso3Code:
-          $ref: '#/components/schemas/string3uc'
-        dstCurrencyIso3Code:
-          $ref: '#/components/schemas/string3uc'
-        transferMethod:
-          $ref: '#/components/schemas/transferMethods'
-        senderId:
-          type: string
-        recipientId:
-          type: string
-        name:
-          type: string
-        accountNumber:
           type: string
         fields:
           type: array
@@ -1199,9 +1137,7 @@ components:
     recipientAccount:
       type: object
       properties:
-        recipientAccountId:
-          type: string
-        accountNumber:
+        id:
           type: string
         fields:
           type: array
