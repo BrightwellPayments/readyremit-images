@@ -1,50 +1,60 @@
-Below is a comparison between a SwaggerHub request that works and a readme request that does not work. 
+<p>Below is a comparison between a SwaggerHub request that works and a readme request that does not work.</p> 
 
-Both platforms use proxy servers. Swagger uses https://app.swaggerhub.com/proxy and readme uses https://try.readme.io.
+<p>Both platforms use proxy servers. Swagger uses <code>https://app.swaggerhub.com/proxy</code> and readme uses <code>https://try.readme.io.</code></p>
 
-SWAGGERHUB
+<h1>SwaggerHub</h1>
 
+<pre>
 Request URL: https://app.swaggerhub.com/proxy?proxy-token=64kxamf&url=https%3A%2F%2Fdev-api.readyremit.com%2Fv1%2Foauth%2Ftoken
 Request Method: POST
 Status Code: 200 
 Remote Address: 107.22.88.47:443
 Referrer Policy: same-origin
+</pre>
 
-Request Data:
+<h3>Request Data</h3>
 
+<pre>
 {
   "client_id": "***",
   "client_secret": "***",
   "audience": "***",
   "grant_type": "***"
 }
+</pre>
 
-Response Data:
+<h3>Response Data</h3>
 
+<pre>
 {
   "access_token":"***",
   "scope":"***",
   "expires_in":1800,
   "token_type":"Bearer"
 }
+</pre>
 
-README
+<h1>README</h1>
 
+<pre>
 Request URL: https://try.readme.io/https://dev-api.readyremit.com/v1/oauth/token
 Request Method: POST
 Status Code: 200 OK
 Remote Address: 3.226.182.14:443
 Referrer Policy: strict-origin-when-cross-origin
+</pre>
 
-Request Data:
+<h3>Request Data</h3>
 
+<pre>
 {
   "client_id":"***",
   "client_secret":"***",
   "audience":"***",
   "grant_type":"***"
 }
+</pre>
 
-Response Data:
+<h3>Response Data</h3>
 
-None.
+<p>None.</p>
