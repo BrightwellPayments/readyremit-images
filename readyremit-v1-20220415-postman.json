@@ -1,0 +1,3385 @@
+{
+    "item": [
+        {
+            "id": "8149647e-fd60-49cb-8d31-0adcb289247a",
+            "name": "Authentication",
+            "description": {
+                "content": "",
+                "type": "text/plain"
+            },
+            "item": [
+                {
+                    "id": "b1b7f7d8-294e-4a87-99b9-7fbfe0670e10",
+                    "name": "Get Access Token",
+                    "request": {
+                        "name": "Get Access Token",
+                        "description": {
+                            "content": "When you sign up to use ReadyRemit, Brightwell provides (for each of your apps) a `client_id`, `client_secret`, `audience`, and `grant_type` which the app exchanges (via this operation) for an `access_token` required by the other ReadyRemit REST API operations.\n",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "oauth",
+                                "token"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"audience\": \"https://sandbox-api.readyremit.com\",\n  \"client_id\": \"{{client_id}}\",\n  \"client_secret\": \"{{client_secret}}\",\n  \"grant_type\": \"client_credentials\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "7ae62057-fe89-4b65-8c18-9a6ee9d25b92",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "oauth",
+                                        "token"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"audience\": \"https://sandbox-api.readyremit.com\",\n  \"client_id\": \"{{client_id}}\",\n  \"client_secret\": \"{{client_secret}}\",\n  \"grant_type\": \"client_credentials\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"access_token\": \"abc\",\n  \"expires_in\": 86400,\n  \"token_type\": \"Bearer\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "f4436a29-22e9-4583-aa17-76a1a20d1660",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "oauth",
+                                        "token"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"audience\": \"https://sandbox-api.readyremit.com\",\n  \"client_id\": \"{{client_id}}\",\n  \"client_secret\": \"{{client_secret}}\",\n  \"grant_type\": \"client_credentials\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"error\": \"access_denied\",\n  \"error_description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "c90cc00e-0664-443f-9c5f-ef9416a85a75",
+                            "name": "Forbidden",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "oauth",
+                                        "token"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"audience\": \"https://sandbox-api.readyremit.com\",\n  \"client_id\": \"{{client_id}}\",\n  \"client_secret\": \"{{client_secret}}\",\n  \"grant_type\": \"client_credentials\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Forbidden",
+                            "code": 403,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"error\": \"unauthorized_client\",\n  \"error_description\": \"Grant type 'abc' not allowed for the client.\",\n  \"error_uri\": \"https://auth0.com/docs/clients/client-grant-types\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "f036dc45-7b2b-4873-956e-e59db2d61066",
+            "name": "Banks and Branches",
+            "description": {
+                "content": "",
+                "type": "text/plain"
+            },
+            "item": [
+                {
+                    "id": "617639d7-78c9-4508-aa83-6ae23b0dd2a0",
+                    "name": "Get Banks",
+                    "request": {
+                        "name": "Get Banks",
+                        "description": {
+                            "content": "Given a [countryIso3Code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3), this operation returns an array of banks located in that country. Bank identifiers and names are useful when creating recipient accounts.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "banks"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": false,
+                                    "key": "countryIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "bankname",
+                                    "value": "<string>",
+                                    "description": "The search looks for any part of `bankname` in the bank's full name."
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "210ed0be-a946-481c-a3b0-6da230dcc54a",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "banks"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "countryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "bankname",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"id\": \"IND60\",\n    \"name\": \"PUNJAB NATIONAL BANK\"\n  },\n  {\n    \"id\": \"IN134\",\n    \"name\": \"NAGPUR NAGARIK SAHAKARI BANK\"\n  },\n  {\n    \"id\": \"IND30\",\n    \"name\": \"DEUTSCHE BANK\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "b3da833e-889a-41d4-8e4d-d63821799c48",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "banks"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "countryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "bankname",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"UnsupportedCountry\",\n    \"message\": \"'CountryIso3Code' must be a valid ISO 3 country.\",\n    \"fieldId\": \"CountryIso3Code\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "9e7eaf81-d19d-4e50-99e5-1f64ac78d05c",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "banks"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "countryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "bankname",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "99638acc-e8b9-42b5-a928-6664d173cc88",
+                    "name": "Get Bank Branches",
+                    "request": {
+                        "name": "Get Bank Branches",
+                        "description": {
+                            "content": "Given a `bankId`, this operation returns an array of branches for that bank. A `bankId` must be 5 characters in length. Otherwise, this operation returns a status code of 400. The operation returns a zero-length array for unrecogized bank identifiers. Branch identifiers and names are useful when creating recipient accounts.\n",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "banks",
+                                ":bankId",
+                                "branches"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "bankId",
+                                    "description": "(Required) The bank identifier."
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "527dee28-601c-42ca-80a5-d80758b2bc44",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "banks",
+                                        ":bankId",
+                                        "branches"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "bankId",
+                                            "description": "(Required) The bank identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"id\": \"DEUT0406AMD\",\n    \"name\": \"AHMEDABAD\"\n  },\n  {\n    \"id\": \"DEUT0406PBC\",\n    \"name\": \"AHMEDABAD\"\n  },\n  {\n    \"id\": \"DEUT0405PBC\",\n    \"name\": \"SURAT\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "cd9d8332-5ea0-488b-8edf-e1f04ff01fe9",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "banks",
+                                        ":bankId",
+                                        "branches"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "bankId",
+                                            "description": "(Required) The bank identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"ExactLengthValidator\",\n    \"message\": \"Bank Id must be 5 characters in length. You entered 4 characters.\",\n    \"fieldId\": \"BankId\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "57fc97bb-d3cb-406b-96a7-f408dee5071c",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "banks",
+                                        ":bankId",
+                                        "branches"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "bankId",
+                                            "description": "(Required) The bank identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "2394c6a4-8c10-4a1b-a417-f2c3b9d979f1",
+            "name": "Helpers",
+            "description": {
+                "content": "",
+                "type": "text/plain"
+            },
+            "item": [
+                {
+                    "id": "0b8e1558-0eab-4a1b-80de-3d8d61a240c8",
+                    "name": "Get Countries and Currencies",
+                    "request": {
+                        "name": "Get Countries and Currencies",
+                        "description": {
+                            "content": "This operation returns the array of countries for which the app owner has established corridors. Each record includes a country object and an array of currency objects. The app can present these records to the end user who can choose a recipient country and currency. The process of establishing a corridor involves the app owner, bank, remittance provider, and Brightwell.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "countries-and-currencies"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "dcb13f29-4fbe-49d8-905f-bde964a1d92e",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "countries-and-currencies"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"country\": {\n      \"name\": \"Germany\",\n      \"iso3Code\": \"DEU\"\n    },\n    \"currencies\": [\n      {\n        \"name\": \"Euro\",\n        \"iso3Code\": \"EUR\",\n        \"symbol\": \"€\",\n        \"decimalPlaces\": 2\n      }\n    ]\n  },\n  {\n    \"country\": {\n      \"name\": \"India\",\n      \"iso3Code\": \"IND\"\n    },\n    \"currencies\": [\n      {\n        \"name\": \"Indian rupee\",\n        \"iso3Code\": \"INR\",\n        \"symbol\": \"₹\",\n        \"decimalPlaces\": 2\n      }\n    ]\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "ee8fe4b6-44d3-48ce-9627-0dbd96b12df0",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "countries-and-currencies"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "1444ffab-3f2b-4ef7-8424-4934103dde9d",
+                    "name": "Get Quote",
+                    "request": {
+                        "name": "Get Quote",
+                        "description": {
+                            "content": "Given a corridor and a sender amount, this operation returns a quote which includes the exchange rate, fee adjustments, disclosures, and recipient amount. See [Currency](https://developer.readyremit.com/reference/about-the-reference#currency) for more about currency values and decimal places. The app can present the quote to the end user who can decide whether to proceed with the transfer. Quotes are accurate at the instance of the quote, but rates may change between the time of the quote and the time of the transfer. The Execute Transfer operation returns the final exchange rate.\n",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "quote"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": false,
+                                    "key": "dstCountryIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "dstCurrencyIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [currency codes](https://en.wikipedia.org/wiki/ISO_4217)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "srcCurrencyIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [currency codes](https://en.wikipedia.org/wiki/ISO_4217)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "transferMethod",
+                                    "value": "BANK_ACCOUNT",
+                                    "description": "(Required) "
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "quoteBy",
+                                    "value": "SEND_AMOUNT",
+                                    "description": "(Required) "
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "amount",
+                                    "value": "<number>",
+                                    "description": "(Required) Sender amount."
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "a4d1cfa9-765f-4894-aa29-d2e3ca07bdab",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "quote"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "srcCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "quoteBy",
+                                            "value": "SEND_AMOUNT"
+                                        },
+                                        {
+                                            "key": "amount",
+                                            "value": "<number>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"sendAmount\": {\n    \"value\": 100000,\n    \"currency\": {\n      \"name\": \"US Dollar\",\n      \"iso3Code\": \"USD\",\n      \"symbol\": \"$\",\n      \"decimalPlaces\": 2\n    }\n  },\n  \"receiveAmount\": {\n    \"value\": 7445765,\n    \"currency\": {\n      \"name\": \"Indian rupee\",\n      \"iso3Code\": \"INR\",\n      \"symbol\": \"₹\",\n      \"decimalPlaces\": 2\n    }\n  },\n  \"rate\": 74.4576574896,\n  \"adjustments\": [\n    {\n      \"label\": \"Transfer Fee\",\n      \"amount\": {\n        \"value\": 879,\n        \"currency\": {\n          \"name\": \"US Dollar\",\n          \"iso3Code\": \"USD\",\n          \"symbol\": \"$\",\n          \"decimalPlaces\": 2\n        }\n      }\n    }\n  ],\n  \"totalCost\": {\n    \"value\": 100879,\n    \"currency\": {\n      \"name\": \"US Dollar\",\n      \"iso3Code\": \"USD\",\n      \"symbol\": \"$\",\n      \"decimalPlaces\": 2\n    }\n  },\n  \"disclosures\": []\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "a477384e-2b7b-431d-b0a5-b9b6714e2b12",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "quote"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "srcCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "quoteBy",
+                                            "value": "SEND_AMOUNT"
+                                        },
+                                        {
+                                            "key": "amount",
+                                            "value": "<number>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"UnsupportedCountry\",\n    \"message\": \"'DestinationCountryISO3Code' must be a valid ISO 3 country.\",\n    \"fieldId\": \"DestinationCountryISO3Code\"\n  },\n  {\n    \"code\": \"UnsupportedCurrency\",\n    \"message\": \"'DestinationCurrencyISO3Code' must be a valid ISO 3 currency.\",\n    \"fieldId\": \"DestinationCurrencyISO3Code\"\n  },\n  {\n    \"code\": \"UnsupportedCurrency\",\n    \"message\": \"'SrcCurrencyIso3Code' must be a valid ISO 3 currency.\",\n    \"fieldId\": \"SrcCurrencyIso3Code\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "e3920dbd-056d-4b35-a744-207c46c07480",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "quote"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "srcCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "quoteBy",
+                                            "value": "SEND_AMOUNT"
+                                        },
+                                        {
+                                            "key": "amount",
+                                            "value": "<number>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "77add8f2-2273-49e4-9510-d83f13b610a7",
+            "name": "Recipients",
+            "description": {
+                "content": "",
+                "type": "text/plain"
+            },
+            "item": [
+                {
+                    "id": "2f0cd7fa-149c-4baa-b756-65a9fc15b1c7",
+                    "name": "Get Recipient Fields",
+                    "request": {
+                        "name": "Get Recipient Fields",
+                        "description": {
+                            "content": "Given a corridor, this operation returns the required and optional fields for a recipient record. See [Custom fields](https://developer.readyremit.com/reference/about-the-reference#custom-fields).",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipient-fields"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": false,
+                                    "key": "dstCountryIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "dstCurrencyIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [currency codes](https://en.wikipedia.org/wiki/ISO_4217)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "transferMethod",
+                                    "value": "BANK_ACCOUNT",
+                                    "description": "(Required) "
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "recipientType",
+                                    "value": "PERSON",
+                                    "description": "(Required) "
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "f3d227d4-05f1-4680-8b49-475ca39c5e9f",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipient-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "recipientType",
+                                            "value": "PERSON"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"fieldSets\": [\n    {\n      \"fieldSetId\": \"PERSONAL_INFORMATION\",\n      \"fieldSetName\": \"Personal information\",\n      \"fields\": [\n        {\n          \"placeholderText\": \"First name\",\n          \"minLength\": 1,\n          \"maxLength\": 50,\n          \"options\": [],\n          \"fieldType\": \"TEXT\",\n          \"fieldId\": \"FIRST_NAME\",\n          \"name\": \"First name\",\n          \"hintText\": \"Enter the recipient's name as it appears on their ID\",\n          \"isRequired\": true\n        },\n        {\n          \"placeholderText\": \"Last name\",\n          \"minLength\": 1,\n          \"maxLength\": 50,\n          \"options\": [],\n          \"fieldType\": \"TEXT\",\n          \"fieldId\": \"LAST_NAME\",\n          \"name\": \"Last name\",\n          \"hintText\": \"Enter the recipient's name as it appears on their ID\",\n          \"isRequired\": true\n        },\n        {\n          \"placeholderText\": \"Mobile phone number\",\n          \"minLength\": 7,\n          \"maxLength\": 15,\n          \"regex\": \"[0-9]{7,15}$\",\n          \"options\": [],\n          \"fieldType\": \"PHONE_NUMBER\",\n          \"fieldId\": \"PHONE_NUMBER\",\n          \"name\": \"Mobile phone number\",\n          \"isRequired\": false\n        }\n      ]\n    },\n    {\n      \"fieldSetId\": \"ADDRESS\",\n      \"fieldSetName\": \"Address\",\n      \"fields\": [\n        {\n          \"placeholderText\": \"Address line 1\",\n          \"minLength\": 5,\n          \"maxLength\": 200,\n          \"options\": [],\n          \"fieldType\": \"TEXT\",\n          \"fieldId\": \"ADDRESS_LINE_1\",\n          \"name\": \"Address line 1\",\n          \"isRequired\": false\n        },\n        {\n          \"placeholderText\": \"Address line 2\",\n          \"options\": [],\n          \"fieldType\": \"TEXT\",\n          \"fieldId\": \"ADDRESS_LINE_2\",\n          \"name\": \"Address line 2\",\n          \"isRequired\": false\n        },\n        {\n          \"placeholderText\": \"City\",\n          \"options\": [],\n          \"fieldType\": \"TEXT\",\n          \"fieldId\": \"ADDRESS_CITY\",\n          \"name\": \"City\",\n          \"isRequired\": false\n        },\n        {\n          \"placeholderText\": \"State\",\n          \"options\": [],\n          \"fieldType\": \"DROPDOWN\",\n          \"fieldId\": \"ADDRESS_STATE\",\n          \"name\": \"State\",\n          \"isRequired\": false\n        },\n        {\n          \"placeholderText\": \"Country\",\n          \"minLength\": 2,\n          \"maxLength\": 2,\n          \"regex\": \"^[A-Za-z]{2}$\",\n          \"options\": [],\n          \"fieldType\": \"DROPDOWN\",\n          \"fieldId\": \"ADDRESS_COUNTRY\",\n          \"name\": \"Country\",\n          \"isRequired\": false\n        },\n        {\n          \"placeholderText\": \"Zip code\",\n          \"minLength\": 4,\n          \"maxLength\": 7,\n          \"regex\": \"^[0-9a-zA-Z\\\\s]{4,7}$\",\n          \"options\": [],\n          \"fieldType\": \"TEXT\",\n          \"fieldId\": \"ADDRESS_ZIP\",\n          \"name\": \"Zip code\",\n          \"isRequired\": false\n        }\n      ]\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "85d74b9a-5d83-4c93-9c5d-594a4440a95b",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipient-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "recipientType",
+                                            "value": "PERSON"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"UnsupportedCountry\",\n    \"message\": \"'DestinationCountryISO3Code' must be a valid ISO 3 country.\",\n    \"fieldId\": \"DestinationCountryISO3Code\"\n  },\n  {\n    \"code\": \"UnsupportedCurrency\",\n    \"message\": \"'DestinationCurrencyISO3Code' must be a valid ISO 3 country.\",\n    \"fieldId\": \"DestinationCurrencyISO3Code\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "fce2dc13-3b62-4e54-9b69-d33f5c8d9673",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipient-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "recipientType",
+                                            "value": "PERSON"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "7658b630-625b-4499-94bf-4d0b527de715",
+                    "name": "Get Recipients",
+                    "request": {
+                        "name": "Get Recipients",
+                        "description": {
+                            "content": "This operation returns all the recipient records associated with the specified `senderId`.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": false,
+                                    "key": "senderId",
+                                    "value": "<string>",
+                                    "description": "(Required) Sender identifier."
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "f0bd6d3c-254b-4549-900e-fde8a82a57b6",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "senderId",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"recipients\": [\n    {\n      \"recipientId\": \"986d85c1-72b8-47ef-85d5-619b308fa6fa\",\n      \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n      \"recipientType\": \"PERSON\",\n      \"firstName\": \"Daniel\",\n      \"lastName\": \"Radcliffe\",\n      \"fields\": [\n        {\n          \"id\": \"NATIONALITY\",\n          \"type\": \"TEXT\",\n          \"value\": \"USA\"\n        }\n      ]\n    },\n    {\n      \"recipientId\": \"6f5ba7ce-0d40-449e-81de-b12c618eb6dd\",\n      \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n      \"recipientType\": \"PERSON\",\n      \"firstName\": \"Moana\",\n      \"lastName\": \"Waialiki\",\n      \"fields\": []\n    },\n    {\n      \"recipientId\": \"ee74b30a-a8a0-4f67-9e35-09c53d249b78\",\n      \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n      \"recipientType\": \"PERSON\",\n      \"firstName\": \"Emma\",\n      \"lastName\": \"Watson\",\n      \"fields\": []\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "83039409-cc5a-4f85-a375-6daadabf3765",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "senderId",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "8a460db6-d1bd-41fa-8353-1fcdf4e60e5a",
+                            "name": "Forbidden",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "senderId",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Forbidden",
+                            "code": 403,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"AccessDenied\",\n    \"message\": \"Sorry! Access denied :(\",\n    \"description\": \"Exception of type 'brightwell.readyremit.common.ErrorHandling.BrightwellException' was thrown.\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "dceddf9a-e8fd-4e60-84a0-c66e29650a77",
+                            "name": "Internal Server Error",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "senderId",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"000\",\n    \"message\": \"Something went wrong!\",\n    \"description\": \"One or more errors occurred. (Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).)\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "76f55b07-9056-4e36-ac52-9848b3e3a234",
+                    "name": "Create Recipient",
+                    "request": {
+                        "name": "Create Recipient",
+                        "description": {
+                            "content": "This operation creates a recipient record.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "6b1d4cc3-0764-4a37-b163-7e84c893b9ea",
+                            "name": "Created",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Jane\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Doe\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Created",
+                            "code": 201,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"recipientId\": \"6f5ba7ce-0d40-449e-81de-b12c618eb6dd\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"recipientType\": \"PERSON\",\n  \"firstName\": \"Jane\",\n  \"lastName\": \"Doe\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Jane\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Doe\"\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "9238f280-3c6c-4314-8e85-cf140c7870e2",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Jane\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Doe\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"InvalidRecipientName\",\n    \"message\": \"'First Name' is required when recipient type is 'PERSON'.\",\n    \"fieldId\": \"FIRST_NAME\"\n  },\n  {\n    \"code\": \"InvalidRecipientName\",\n    \"message\": \"'Last Name' is required when recipient type is 'PERSON'.\",\n    \"fieldId\": \"LAST_NAME\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "a358ac26-aa88-4ade-8310-2e1c593a623c",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Jane\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Doe\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "c0e3f31c-cbf9-4a0f-8378-fd701f44d8a9",
+                            "name": "Bad Request - Wrong senderId",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Jane\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Doe\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Forbidden",
+                            "code": 403,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"AccessDenied\",\n    \"message\": \"Sorry! Access denied :(\",\n    \"description\": \"Exception of type 'brightwell.readyremit.common.ErrorHandling.BrightwellException' was thrown.\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "3b60ad96-90a1-4530-8704-070ffe983e0b",
+                    "name": "Get Recipient",
+                    "request": {
+                        "name": "Get Recipient",
+                        "description": {
+                            "content": "This operation returns a recipient record for the specified `recipientId`.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients",
+                                ":recipientId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "recipientId",
+                                    "description": "(Required) The recipient identifier"
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "1426ea4d-8986-4a1d-bba9-df54b6ef4906",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"recipientId\": \"6f5ba7ce-0d40-449e-81de-b12c618eb6dd\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"recipientType\": \"PERSON\",\n  \"firstName\": \"Moana\",\n  \"lastName\": \"Waialiki\",\n  \"fields\": []\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "d065d2da-2b21-48ef-ac79-38fd0ff79e0f",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "d889fe09-7076-4eeb-9d08-2d4ad4d5ada3",
+                            "name": "Not Found",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Not Found",
+                            "code": 404,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"RecipientNotFound\",\n    \"message\": \"Recipient not found.\",\n    \"description\": \"Recipient cannot be found.\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "92c3f791-49e1-427c-a0a4-fbd5a12168ab",
+                    "name": "Update Recipient",
+                    "request": {
+                        "name": "Update Recipient",
+                        "description": {
+                            "content": "This operation updates an entire recipient record.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients",
+                                ":recipientId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "recipientId",
+                                    "description": "(Required) The recipient identifier"
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "PUT",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "cc5aa3ef-10b6-410b-a9ba-6ec10fd6eeb7",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "PUT",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"recipientId\": \"dolor veniam amet eiusmod reprehenderit\",\n  \"senderId\": \"amet officia eu ipsum consequat\",\n  \"firstName\": \"ex\",\n  \"lastName\": \"quis irure dolore\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "48ffcfdc-aa79-4b86-86fc-8370eb1bbf05",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "PUT",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "d24ea716-39cf-4e56-bfbf-1a6ff0859b33",
+                    "name": "Delete Recipient",
+                    "request": {
+                        "name": "Delete Recipient",
+                        "description": {
+                            "content": "This operation deletes the recipient record corresponding to the specified `recipientId`.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients",
+                                ":recipientId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "recipientId",
+                                    "description": "(Required) The recipient identifier"
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "DELETE",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "2bf408df-3795-4e98-85af-b1da53ed2bea",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "7f8e32e9-bfef-4e75-81c2-0e4b60e81ca7",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "17a09cf6-04ee-4b4f-b75b-8823d4cff7f5",
+                            "name": "Not Found",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "body": {}
+                            },
+                            "status": "Not Found",
+                            "code": 404,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"RecipientNotFound\",\n    \"message\": \"Destinataria no encontrada.\",\n    \"description\": \"Recipient cannot be found.\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "0abea2ec-f4c8-4281-9b59-9e7477f8d2a1",
+            "name": "Recipient Accounts",
+            "description": {
+                "content": "",
+                "type": "text/plain"
+            },
+            "item": [
+                {
+                    "id": "14df37ab-9f8b-4986-a857-46d810948412",
+                    "name": "Get Recipient Account Fields",
+                    "request": {
+                        "name": "Get Recipient Account Fields",
+                        "description": {
+                            "content": "Given a corridor, this operation returns the required and optional fields for a recipient account record. See [Custom fields](https://developer.readyremit.com/reference/about-the-reference#custom-fields).",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipient-account-fields"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": false,
+                                    "key": "dstCountryIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "dstCurrencyIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [currency codes](https://en.wikipedia.org/wiki/ISO_4217)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "transferMethod",
+                                    "value": "BANK_ACCOUNT",
+                                    "description": "(Required) "
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "recipientType",
+                                    "value": "PERSON",
+                                    "description": "(Required) "
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "4001d60a-d5f3-4d55-948a-4a5f92608126",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipient-account-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "recipientType",
+                                            "value": "PERSON"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"fieldSets\": [\n    {\n      \"fieldSetId\": \"BANK_DETAILS\",\n      \"fieldSetName\": \"Bank Details\",\n      \"fields\": [\n        {\n          \"placeholderText\": \"Type of account\",\n          \"minLength\": 1,\n          \"maxLength\": 3,\n          \"regex\": \"\",\n          \"validationErrors\": [],\n          \"options\": [],\n          \"fieldType\": \"DROPDOWN\",\n          \"fieldId\": \"BANK_ACCOUNT_TYPE\",\n          \"name\": \"Type of account\",\n          \"hintText\": \"\",\n          \"isRequired\": false\n        },\n        {\n          \"placeholderText\": \"Bank name\",\n          \"minLength\": 5,\n          \"maxLength\": 5,\n          \"regex\": \"\",\n          \"validationErrors\": [],\n          \"options\": [],\n          \"fieldType\": \"DROPDOWN\",\n          \"fieldId\": \"BANK_NAME\",\n          \"name\": \"Bank name\",\n          \"hintText\": \"\",\n          \"isRequired\": true\n        },\n        {\n          \"placeholderText\": \"Purpose of payment\",\n          \"minLength\": 1,\n          \"maxLength\": 2,\n          \"regex\": \"\",\n          \"validationErrors\": [],\n          \"options\": [],\n          \"fieldType\": \"DROPDOWN\",\n          \"fieldId\": \"PURPOSE_OF_PAYMENT\",\n          \"name\": \"Purpose of payment\",\n          \"hintText\": \"\",\n          \"isRequired\": false\n        }\n      ]\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "079dcec9-035e-4e8d-aa02-2dcfcd1c2282",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipient-account-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "recipientType",
+                                            "value": "PERSON"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"UnsupportedCountry\",\n    \"message\": \"'DestinationCountryISO3Code' must be a valid ISO 3 country.\",\n    \"fieldId\": \"DestinationCountryISO3Code\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "791d4117-73f9-4f9a-8a8d-0fc7b390db9e",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipient-account-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        },
+                                        {
+                                            "key": "recipientType",
+                                            "value": "PERSON"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "d93fc5ee-94b8-4ea6-a008-4bf51a7ed655",
+                    "name": "Get Recipient Accounts",
+                    "request": {
+                        "name": "Get Recipient Accounts",
+                        "description": {
+                            "content": "This operation returns an array of recipient account records associated with the specified recipient identifier.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients",
+                                ":recipientId",
+                                "accounts"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "recipientId",
+                                    "description": "(Required) The recipient identifier"
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "5a070e4e-6eaa-4dfd-9062-dba1b2979321",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"accounts\": [\n    {\n      \"recipientAccountId\": \"e27c7395-b46a-4b9b-89fd-cd6a3da7fd85\",\n      \"accountNumber\": \"98237498327489273\",\n      \"fields\": [\n        {\n          \"id\": \"bankId\",\n          \"type\": \"NUMBER\",\n          \"value\": \"78\"\n        },\n        {\n          \"id\": \"branchId\",\n          \"type\": \"NUMBER\",\n          \"value\": \"99\"\n        },\n        {\n          \"id\": \"accountNumber\",\n          \"type\": \"TEXT\",\n          \"value\": \"1234556677\"\n        }\n      ]\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "1ae31fb8-000d-4210-a7ba-0d0dc669d8eb",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "13e80f35-97cf-47d5-9429-a11e4975679c",
+                            "name": "Not Found",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Not Found",
+                            "code": 404,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"RecipientNotFound\",\n    \"message\": \"Destinataria no encontrada.\",\n    \"description\": \"Recipient cannot be found.\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "2be88727-ba34-4679-8f58-ea14dfe02aeb",
+                    "name": "Create Recipient Account",
+                    "request": {
+                        "name": "Create Recipient Account",
+                        "description": {
+                            "content": "This operation creates a recipient account record.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients",
+                                ":recipientId",
+                                "accounts"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "recipientId",
+                                    "description": "(Required) The recipient identifier"
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"dstCountryIso3Code\": \"<string>\",\n  \"dstCurrencyIso3Code\": \"<string>\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"senderId\": \"<string>\",\n  \"name\": \"<string>\",\n  \"accountNumber\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "b7b70391-6b60-44c9-832d-d569d6135f73",
+                            "name": "Created",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"name\": \"My Account\",\n  \"accountNumber\": \"1\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"12345\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Created",
+                            "code": 201,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"recipientAccountId\": \"e27c7395-b46a-4b9b-89fd-cd6a3da7fd85\",\n  \"accountNumber\": \"1\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"12345\"\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "d814103e-f8b0-4bef-9e80-25b3a84a72bb",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"name\": \"My Account\",\n  \"accountNumber\": \"1\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"12345\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"Lorem ullamco laborum null\",\n    \"message\": \"in exercitation sint velit id\",\n    \"fieldId\": \"in exercitation Duis est\"\n  },\n  {\n    \"code\": \"nostrud nisi sed est repre\",\n    \"message\": \"sed irure cupidatat nisi in\",\n    \"fieldId\": \"ipsum deserunt mollit labore\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "485cd39e-bfa5-444b-88c9-9d934ff60bf9",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"name\": \"My Account\",\n  \"accountNumber\": \"1\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"12345\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                },
+                {
+                    "id": "55f6503f-f752-4942-a8be-d78e1b66ee56",
+                    "name": "Get Recipient Account",
+                    "request": {
+                        "name": "Get Recipient Account",
+                        "description": {
+                            "content": "This operation returns a recipient account record.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients",
+                                ":recipientId",
+                                "accounts",
+                                ":accId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "recipientId",
+                                    "description": "(Required) The recipient identifier"
+                                },
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "accId",
+                                    "description": "(Required) Recipient account identifier."
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "7f15f4b4-146f-45aa-b299-475fa93faf0b",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"recipientAccountId\": \"e27c7395-b46a-4b9b-89fd-cd6a3da7fd85\",\n  \"accountNumber\": \"98237498327489273\",\n  \"fields\": [\n    {\n      \"id\": \"bankId\",\n      \"type\": \"NUMBER\",\n      \"value\": \"78\"\n    },\n    {\n      \"id\": \"branchId\",\n      \"type\": \"NUMBER\",\n      \"value\": \"99\"\n    },\n    {\n      \"id\": \"accountNumber\",\n      \"type\": \"TEXT\",\n      \"value\": \"1234556677\"\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "00da9686-b4ca-4a87-abe7-60b3ccb3f822",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"Lorem ullamco laborum null\",\n    \"message\": \"in exercitation sint velit id\",\n    \"fieldId\": \"in exercitation Duis est\"\n  },\n  {\n    \"code\": \"nostrud nisi sed est repre\",\n    \"message\": \"sed irure cupidatat nisi in\",\n    \"fieldId\": \"ipsum deserunt mollit labore\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "41ad4965-f565-42cd-924c-8fefb5e2ef46",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "239e33ef-48b7-4693-96d2-16ee0ce3e385",
+                    "name": "Update Recipient Account",
+                    "request": {
+                        "name": "Update Recipient Account",
+                        "description": {
+                            "content": "This operation updates an entire recipient account record.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients",
+                                ":recipientId",
+                                "accounts",
+                                ":accId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "recipientId",
+                                    "description": "(Required) The recipient identifier"
+                                },
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "accId",
+                                    "description": "(Required) Recipient account identifier."
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "PUT",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "822168dc-7f90-48b4-8547-9a7cd78685be",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "PUT",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"recipientAccountId\": \"in proident esse\",\n  \"accountNumber\": \"ipsum officia\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "af098efd-8aa5-491f-9ae3-f67fa926315d",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "PUT",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"Lorem ullamco laborum null\",\n    \"message\": \"in exercitation sint velit id\",\n    \"fieldId\": \"in exercitation Duis est\"\n  },\n  {\n    \"code\": \"nostrud nisi sed est repre\",\n    \"message\": \"sed irure cupidatat nisi in\",\n    \"fieldId\": \"ipsum deserunt mollit labore\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "9591ed7a-eea3-4b54-adee-c28e75db8b23",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "PUT",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "1ba40861-a065-47d6-a206-30a0d4be518b",
+                    "name": "Delete Recipient Account",
+                    "request": {
+                        "name": "Delete Recipient Account",
+                        "description": {
+                            "content": "This operation deletes a recipient account record.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "recipients",
+                                ":recipientId",
+                                "accounts",
+                                ":accId"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "recipientId",
+                                    "description": "(Required) The recipient identifier"
+                                },
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "accId",
+                                    "description": "(Required) Recipient account identifier."
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "DELETE",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "d1a9d034-9c5c-4a3f-b403-b13a40f21d4c",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "230edb0d-7e1c-4b80-9860-76074eebbad4",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"Lorem ullamco laborum null\",\n    \"message\": \"in exercitation sint velit id\",\n    \"fieldId\": \"in exercitation Duis est\"\n  },\n  {\n    \"code\": \"nostrud nisi sed est repre\",\n    \"message\": \"sed irure cupidatat nisi in\",\n    \"fieldId\": \"ipsum deserunt mollit labore\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "820f2644-1e26-4bd9-8adf-2c36d36168b4",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "3a23571a-a569-496e-8463-ba28d9c99934",
+            "name": "Transfers",
+            "description": {
+                "content": "",
+                "type": "text/plain"
+            },
+            "item": [
+                {
+                    "id": "e6e4483d-5bd3-4927-b6ca-3bca9cc2bf81",
+                    "name": "Get Transfer Fields",
+                    "request": {
+                        "name": "Get Transfer Fields",
+                        "description": {
+                            "content": "This operation returns required transfer fields based on .",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "transfer-fields"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": false,
+                                    "key": "dstCountryIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "dstCurrencyIso3Code",
+                                    "value": "<string>",
+                                    "description": "(Required) See [currency codes](https://en.wikipedia.org/wiki/ISO_4217)."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "transferMethod",
+                                    "value": "BANK_ACCOUNT",
+                                    "description": "(Required) "
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "cf88ea66-cf6a-4542-8d36-27b8f85a6de5",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "transfer-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"fieldSets\": [\n      {\n        \"fieldSetId\": \"TRANSFER_FIELDS\",\n        \"fieldSetName\": \"Transfer Fields\",\n        \"fields\": [\n          {\n            \"placeholderText\": \"-select-\",\n            \"minLength\": 1,\n            \"maxLength\": 40,\n            \"validationErrors\": [],\n            \"options\": [\n              {\n                \"id\": 1,\n                \"name\": \"FAMILY MAINTENANCE\"\n              },\n              {\n                \"id\": 2,\n                \"name\": \"EDUCATION\"\n              },\n              {\n                \"id\": 3,\n                \"name\": \"MEDICAL\"\n              },\n              {\n                \"id\": 4,\n                \"name\": \"TOURIST\"\n              },\n              {\n                \"id\": 6,\n                \"name\": \"PERSONAL\"\n              },\n              {\n                \"id\": 18,\n                \"name\": \"TRANSFER TO NRE ACCOUNT\"\n              },\n              {\n                \"id\": 21,\n                \"name\": \"INVESTMENT IN MUTUAL FUND/INSURANCE\"\n              },\n              {\n                \"id\": 22,\n                \"name\": \"INVESTMENT THROUGH BANK\"\n              },\n              {\n                \"id\": 23,\n                \"name\": \"PURCHASE OF REAL ESTATE\"\n              },\n              {\n                \"id\": 24,\n                \"name\": \"EDUCATION/TUITION/BOARDING\"\n              },\n              {\n                \"id\": 25,\n                \"name\": \"HOTEL ACCOMODATIONS\"\n              },\n              {\n                \"id\": 26,\n                \"name\": \"TRAVEL AGENT\"\n              },\n              {\n                \"id\": 28,\n                \"name\": \"UTILITY PROV- idER\"\n              },\n              {\n                \"id\": 29,\n                \"name\": \"TAX PAYMENT\"\n              },\n              {\n                \"id\": 30,\n                \"name\": \"LOAN PAYMENT TO BANK\"\n              },\n              {\n                \"id\": 31,\n                \"name\": \"PRIME MINISTERS NATIONAL RELIEF FUND (INDIA)\"\n              },\n              {\n                \"id\": 32,\n                \"name\": \"HOSPITAL OR MEDICAL INSTITUTION\"\n              },\n              {\n                \"id\": 43,\n                \"name\": \"TRADE RELATED SERVICES\"\n              },\n              {\n                \"id\": 44,\n                \"name\": \"TRADE REALISATION OF EXPORT BILLS\"\n              },\n              {\n                \"id\": 45,\n                \"name\": \"TRADE ADVANCE RECEIPT AGAINST EXPORT\"\n              }\n            ],\n            \"fieldType\": \"DROPDOWN,\",\n            \"fieldId\": \"REMITTANCE_PURPOSE,\",\n            \"name\": \"Purpose of remittance,\",\n            \"hintText\": \"Insert the purpose of this remittance,\",\n            \"isRequired\": false\n          }\n        ]\n      }\n    ]\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "cc4e6882-1471-49fa-aa52-38cd3de8bc23",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "transfer-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"UnsupportedCountry\",\n    \"message\": \"'DestinationCountryISO3Code' must be a valid ISO 3 country.\",\n    \"fieldId\": \"DestinationCountryISO3Code\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "e5c11d00-6125-4765-8e04-d7da60d18df4",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "transfer-fields"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "dstCountryIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "dstCurrencyIso3Code",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "transferMethod",
+                                            "value": "BANK_ACCOUNT"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "553fb18c-b4dd-4160-bb50-7a13f1c39836",
+                    "name": "Execute Transfer",
+                    "request": {
+                        "name": "Execute Transfer",
+                        "description": {
+                            "content": "This operation performs a sender-to-recipient transfer of funds.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "transfers"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"dstCountryIso3Code\": \"<string>\",\n  \"dstCurrencyIso3Code\": \"<string>\",\n  \"srcCurrencyIso3Code\": \"<string>\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"quoteBy\": \"SEND_AMOUNT\",\n  \"amount\": \"<integer>\",\n  \"senderId\": \"<string>\",\n  \"recipientId\": \"<string>\",\n  \"recipientAccountId\": \"<string>\",\n  \"purposeOfRemittance\": 1\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "6c16c5e1-bedc-49b4-92f8-7c912444f8aa",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "transfers"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"<string>\",\n  \"dstCurrencyIso3Code\": \"<string>\",\n  \"srcCurrencyIso3Code\": \"<string>\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"quoteBy\": \"SEND_AMOUNT\",\n  \"amount\": \"<integer>\",\n  \"senderId\": \"<string>\",\n  \"recipientId\": \"<string>\",\n  \"recipientAccountId\": \"<string>\",\n  \"purposeOfRemittance\": 1\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "28010f8d-28be-4716-952e-7949df32a76b",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "transfers"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"<string>\",\n  \"dstCurrencyIso3Code\": \"<string>\",\n  \"srcCurrencyIso3Code\": \"<string>\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"quoteBy\": \"SEND_AMOUNT\",\n  \"amount\": \"<integer>\",\n  \"senderId\": \"<string>\",\n  \"recipientId\": \"<string>\",\n  \"recipientAccountId\": \"<string>\",\n  \"purposeOfRemittance\": 1\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"aliquip\",\n    \"message\": \"aliqua pariatur cillum in\",\n    \"fieldId\": \"veniam mollit ad aliquip\"\n  },\n  {\n    \"code\": \"laboris aliqua esse consequat\",\n    \"message\": \"quis adipisicing aliqua elit\",\n    \"fieldId\": \"et eiusmod irure enim\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "edaef3f3-9f27-4bce-aa40-901fe94951ca",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "transfers"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"<string>\",\n  \"dstCurrencyIso3Code\": \"<string>\",\n  \"srcCurrencyIso3Code\": \"<string>\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"quoteBy\": \"SEND_AMOUNT\",\n  \"amount\": \"<integer>\",\n  \"senderId\": \"<string>\",\n  \"recipientId\": \"<string>\",\n  \"recipientAccountId\": \"<string>\",\n  \"purposeOfRemittance\": 1\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "type": "string",
+            "value": "https://sandbox-api.readyremit.com/v1",
+            "key": "baseUrl"
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "token",
+                "value": "<Bearer Token>"
+            }
+        ]
+    },
+    "info": {
+        "_postman_id": "f87d6723-d07c-4712-a0b4-b5c4c8db7a40",
+        "name": "API Reference",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "**Filename**: readyremit-v1-20220415-openapi.yaml\n\nSee [ReadyRemit Developer Portal](https://developer.readyremit.com/).\n",
+            "type": "text/plain"
+        }
+    }
+}

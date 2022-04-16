@@ -258,7 +258,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/quote'
+                $ref: '#/components/schemas/getQuoteResponse200'
               example:
                 sendAmount:
                   value: 100000
@@ -292,6 +292,22 @@ paths:
                     symbol: $
                     decimalPlaces: 2
                 disclosures: []
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/codeMsgFieldIdObjectArray'
+              example:
+              - code: UnsupportedCountry
+                message: '''DestinationCountryISO3Code'' must be a valid ISO 3 country.'
+                fieldId: DestinationCountryISO3Code
+              - code: UnsupportedCurrency
+                message: '''DestinationCurrencyISO3Code'' must be a valid ISO 3 currency.'
+                fieldId: DestinationCurrencyISO3Code
+              - code: UnsupportedCurrency
+                message: '''SrcCurrencyIso3Code'' must be a valid ISO 3 currency.'
+                fieldId: SrcCurrencyIso3Code
         "401":
           description: Unauthorized
           content:
@@ -430,8 +446,11 @@ paths:
                 $ref: '#/components/schemas/codeMsgFieldIdObjectArray'
               example:
               - code: UnsupportedCountry
-                message: '''DestinationCountryISO3Code'' debe ser un país ISO 3 válido.'
+                message: '''DestinationCountryISO3Code'' must be a valid ISO 3 country.'
                 fieldId: DestinationCountryISO3Code
+              - code: UnsupportedCurrency
+                message: '''DestinationCurrencyISO3Code'' must be a valid ISO 3 country.'
+                fieldId: DestinationCurrencyISO3Code
         "401":
           description: Unauthorized
           content:
@@ -523,19 +542,28 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/createRecipientRequest'
-            example:
-              dstCountryIso3Code: IND
-              dstCurrencyIso3Code: INR
-              recipientType: PERSON
-              transferMethod: BANK_ACCOUNT
-              senderId: 55ef79b0-0f0f-459f-ad62-effcf516df7d
-              fields:
-              - id: FIRST_NAME
-                type: TEXT
-                value: Moana
-              - id: LAST_NAME
-                type: TEXT
-                value: Waialiki
+            examples:
+              Person:
+                summary: PERSON
+                value:
+                  recipientType: PERSON
+                  senderId: 55ef79b0-0f0f-459f-ad62-effcf516df7d
+                  fields:
+                  - id: FIRST_NAME
+                    type: TEXT
+                    value: Jane
+                  - id: LAST_NAME
+                    type: TEXT
+                    value: Doe
+              Business:
+                summary: BUSINESS
+                value:
+                  recipientType: BUSINESS
+                  senderId: 55ef79b0-0f0f-459f-ad62-effcf516df7d
+                  fields:
+                  - id: COMPANY_NAME
+                    type: TEXT
+                    value: Overseas Inc
       responses:
         "201":
           description: Created
@@ -543,13 +571,33 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/recipient'
-              example:
-                recipientId: 6f5ba7ce-0d40-449e-81de-b12c618eb6dd
-                senderId: 55ef79b0-0f0f-459f-ad62-effcf516df7d
-                recipientType: PERSON
-                firstName: Moana
-                lastName: Waialiki
-                fields: []
+              examples:
+                Person:
+                  summary: PERSON
+                  value:
+                    recipientId: 6f5ba7ce-0d40-449e-81de-b12c618eb6dd
+                    senderId: 55ef79b0-0f0f-459f-ad62-effcf516df7d
+                    recipientType: PERSON
+                    firstName: Jane
+                    lastName: Doe
+                    fields:
+                    - id: FIRST_NAME
+                      type: TEXT
+                      value: Jane
+                    - id: LAST_NAME
+                      type: TEXT
+                      value: Doe
+                Business:
+                  summary: BUSINESS
+                  value:
+                    recipientId: 7aeefa7e-4e2c-4a3f-b702-61cc27f47087
+                    senderId: 55ef79b0-0f0f-459f-ad62-effcf516df7d
+                    recipientType: BUSINESS
+                    companyName: Overseas Inc
+                    fields:
+                    - id: COMPANY_NAME
+                      type: TEXT
+                      value: Overseas Inc
         "400":
           description: Bad Request
           content:
@@ -557,18 +605,37 @@ paths:
               schema:
                 $ref: '#/components/schemas/codeMsgFieldIdObjectArray'
               examples:
-                UnsupportedCountry:
-                  summary: UnsupportedCountry
+                Person:
+                  summary: PERSON
                   value:
-                  - code: UnsupportedCountry
-                    message: '''DestinationCountryISO3Code'' debe ser un país ISO 3 válido.'
-                    fieldId: DestinationCountryISO3Code
+                  - code: InvalidRecipientName
+                    message: '''First Name'' is required when recipient type is ''PERSON''.'
+                    fieldId: FIRST_NAME
+                  - code: InvalidRecipientName
+                    message: '''Last Name'' is required when recipient type is ''PERSON''.'
+                    fieldId: LAST_NAME
+                Business:
+                  summary: BUSINESS
+                  value:
+                  - code: InvalidRecipientName
+                    message: '''Company Name'' is required when recipient type is ''BUSINESS''.'
+                    fieldId: COMPANY_NAME
         "401":
           description: Unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/response401'
+        "403":
+          description: Bad Request - Wrong senderId
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/codeMsgDescObjectArray'
+              example:
+              - code: AccessDenied
+                message: Sorry! Access denied :(
+                description: Exception of type 'brightwell.readyremit.common.ErrorHandling.BrightwellException' was thrown.
   /recipients/{recipientId}:
     get:
       tags:
@@ -1304,14 +1371,8 @@ components:
     createRecipientRequest:
       type: object
       properties:
-        dstCountryIso3Code:
-          $ref: '#/components/schemas/threeUppercaseChars'
-        dstCurrencyIso3Code:
-          $ref: '#/components/schemas/threeUppercaseChars'
         recipientType:
           $ref: '#/components/schemas/recipientTypes'
-        transferMethod:
-          $ref: '#/components/schemas/transferMethods'
         senderId:
           type: string
         fields:
@@ -1436,7 +1497,7 @@ components:
           type: string
         amount:
           $ref: '#/components/schemas/money'
-    quote:
+    getQuoteResponse200:
       required:
       - adjustments
       - disclosures
