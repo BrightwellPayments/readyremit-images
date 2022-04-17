@@ -1,7 +1,7 @@
 {
     "item": [
         {
-            "id": "8149647e-fd60-49cb-8d31-0adcb289247a",
+            "id": "d10a312e-bd69-410d-96c0-8072aafd6e47",
             "name": "Authentication",
             "description": {
                 "content": "",
@@ -9,7 +9,7 @@
             },
             "item": [
                 {
-                    "id": "b1b7f7d8-294e-4a87-99b9-7fbfe0670e10",
+                    "id": "ef7f568c-46d8-4e50-a956-83d0325349a0",
                     "name": "Get Access Token",
                     "request": {
                         "name": "Get Access Token",
@@ -52,7 +52,7 @@
                     },
                     "response": [
                         {
-                            "id": "7ae62057-fe89-4b65-8c18-9a6ee9d25b92",
+                            "id": "36c32c4a-4e8a-473e-b718-e730ae51775d",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -90,7 +90,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "f4436a29-22e9-4583-aa17-76a1a20d1660",
+                            "id": "94b9af15-2a63-4bc1-8f8e-0dbb40cbf038",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -128,7 +128,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "c90cc00e-0664-443f-9c5f-ef9416a85a75",
+                            "id": "43239c45-4174-4a55-b8d1-3c888fb1040f",
                             "name": "Forbidden",
                             "originalRequest": {
                                 "url": {
@@ -175,7 +175,7 @@
             "event": []
         },
         {
-            "id": "f036dc45-7b2b-4873-956e-e59db2d61066",
+            "id": "5fbb66cc-5340-4551-8385-ed63531dbf39",
             "name": "Banks and Branches",
             "description": {
                 "content": "",
@@ -183,7 +183,7 @@
             },
             "item": [
                 {
-                    "id": "617639d7-78c9-4508-aa83-6ae23b0dd2a0",
+                    "id": "3d5f0c0e-6713-4fba-8aa0-34b8449c7bc0",
                     "name": "Get Banks",
                     "request": {
                         "name": "Get Banks",
@@ -225,7 +225,7 @@
                     },
                     "response": [
                         {
-                            "id": "210ed0be-a946-481c-a3b0-6da230dcc54a",
+                            "id": "fbe398ab-0aec-4747-ae75-3f924872d784",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -263,7 +263,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "b3da833e-889a-41d4-8e4d-d63821799c48",
+                            "id": "db957241-8ae8-4b8a-b6f8-6584aa05488b",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -301,7 +301,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "9e7eaf81-d19d-4e50-99e5-1f64ac78d05c",
+                            "id": "08fda82d-e398-455f-8ba9-200e6af26112",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -342,7 +342,7 @@
                     "event": []
                 },
                 {
-                    "id": "99638acc-e8b9-42b5-a928-6664d173cc88",
+                    "id": "b8a0b643-a35b-40e0-ac80-41a82825ac70",
                     "name": "Get Bank Branches",
                     "request": {
                         "name": "Get Bank Branches",
@@ -381,7 +381,7 @@
                     },
                     "response": [
                         {
-                            "id": "527dee28-601c-42ca-80a5-d80758b2bc44",
+                            "id": "e089e730-503a-438f-99a8-ef2bd428867f",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -420,7 +420,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "cd9d8332-5ea0-488b-8edf-e1f04ff01fe9",
+                            "id": "360d798c-0002-4d90-add6-a27c31bff262",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -459,7 +459,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "57fc97bb-d3cb-406b-96a7-f408dee5071c",
+                            "id": "65848225-d8f5-446a-be8b-b65623ba952b",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -504,7 +504,7 @@
             "event": []
         },
         {
-            "id": "2394c6a4-8c10-4a1b-a417-f2c3b9d979f1",
+            "id": "83c01cb0-a6d5-4e62-be41-66cf7d13ad2d",
             "name": "Helpers",
             "description": {
                 "content": "",
@@ -512,7 +512,7 @@
             },
             "item": [
                 {
-                    "id": "0b8e1558-0eab-4a1b-80de-3d8d61a240c8",
+                    "id": "ab77d10f-f861-4b82-b189-914c18a7cbf5",
                     "name": "Get Countries and Currencies",
                     "request": {
                         "name": "Get Countries and Currencies",
@@ -541,7 +541,7 @@
                     },
                     "response": [
                         {
-                            "id": "dcb13f29-4fbe-49d8-905f-bde964a1d92e",
+                            "id": "343e7906-0b10-4bd6-acf3-6079bb9d2117",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -570,7 +570,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "ee8fe4b6-44d3-48ce-9627-0dbd96b12df0",
+                            "id": "5dc663db-7973-4e89-91b5-0b7033a805e4",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -602,7 +602,7 @@
                     "event": []
                 },
                 {
-                    "id": "1444ffab-3f2b-4ef7-8424-4934103dde9d",
+                    "id": "8b7362c4-780b-4f98-bb4f-5512128201f8",
                     "name": "Get Quote",
                     "request": {
                         "name": "Get Quote",
@@ -668,7 +668,7 @@
                     },
                     "response": [
                         {
-                            "id": "a4d1cfa9-765f-4894-aa29-d2e3ca07bdab",
+                            "id": "7cd4ac72-e810-47ba-ac93-0a2d0ebfe392",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -722,7 +722,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "a477384e-2b7b-431d-b0a5-b9b6714e2b12",
+                            "id": "ce508eee-d05e-4df9-a998-1ec85df8a5c8",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -776,7 +776,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "e3920dbd-056d-4b35-a744-207c46c07480",
+                            "id": "e473e082-8405-4a15-8be5-e0e548c2f837",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -836,7 +836,7 @@
             "event": []
         },
         {
-            "id": "77add8f2-2273-49e4-9510-d83f13b610a7",
+            "id": "a91e2d54-749c-4649-b0c3-6e2bf9f4fb1a",
             "name": "Recipients",
             "description": {
                 "content": "",
@@ -844,7 +844,7 @@
             },
             "item": [
                 {
-                    "id": "2f0cd7fa-149c-4baa-b756-65a9fc15b1c7",
+                    "id": "bfd549f0-064e-4297-9a3d-d59ed1d76b65",
                     "name": "Get Recipient Fields",
                     "request": {
                         "name": "Get Recipient Fields",
@@ -898,7 +898,7 @@
                     },
                     "response": [
                         {
-                            "id": "f3d227d4-05f1-4680-8b49-475ca39c5e9f",
+                            "id": "babc11af-53a5-47b3-8906-fd88cac342d1",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -944,7 +944,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "85d74b9a-5d83-4c93-9c5d-594a4440a95b",
+                            "id": "64a4711e-88e8-424c-a26c-32558f10061a",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -990,7 +990,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "fce2dc13-3b62-4e54-9b69-d33f5c8d9673",
+                            "id": "6722ca9b-7f3b-4c1a-8d27-72d639a077ef",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -1039,7 +1039,7 @@
                     "event": []
                 },
                 {
-                    "id": "7658b630-625b-4499-94bf-4d0b527de715",
+                    "id": "83fef9fb-1a15-42f9-b6b5-81eb62728f56",
                     "name": "Get Recipients",
                     "request": {
                         "name": "Get Recipients",
@@ -1075,7 +1075,7 @@
                     },
                     "response": [
                         {
-                            "id": "f0bd6d3c-254b-4549-900e-fde8a82a57b6",
+                            "id": "24067b2a-243c-4a3b-85f9-5ec08641c174",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1104,12 +1104,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipients\": [\n    {\n      \"recipientId\": \"986d85c1-72b8-47ef-85d5-619b308fa6fa\",\n      \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n      \"recipientType\": \"PERSON\",\n      \"firstName\": \"Daniel\",\n      \"lastName\": \"Radcliffe\",\n      \"fields\": [\n        {\n          \"id\": \"NATIONALITY\",\n          \"type\": \"TEXT\",\n          \"value\": \"USA\"\n        }\n      ]\n    },\n    {\n      \"recipientId\": \"6f5ba7ce-0d40-449e-81de-b12c618eb6dd\",\n      \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n      \"recipientType\": \"PERSON\",\n      \"firstName\": \"Moana\",\n      \"lastName\": \"Waialiki\",\n      \"fields\": []\n    },\n    {\n      \"recipientId\": \"ee74b30a-a8a0-4f67-9e35-09c53d249b78\",\n      \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n      \"recipientType\": \"PERSON\",\n      \"firstName\": \"Emma\",\n      \"lastName\": \"Watson\",\n      \"fields\": []\n    }\n  ]\n}",
+                            "body": "{\n  \"recipients\": [\n    {\n      \"recipientId\": \"986d85c1-72b8-47ef-85d5-619b308fa6fa\",\n      \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n      \"recipientType\": \"PERSON\",\n      \"firstName\": \"Alpha\",\n      \"lastName\": \"Flight\",\n      \"fields\": [\n        {\n          \"id\": \"FIRST_NAME\",\n          \"type\": \"TEXT\",\n          \"value\": \"Alpha\"\n        },\n        {\n          \"id\": \"LAST_NAME\",\n          \"type\": \"TEXT\",\n          \"value\": \"Flight\"\n        }\n      ]\n    },\n    {\n      \"recipientId\": \"59555d87-5357-4e17-bcb1-83cbcf59a711\",\n      \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n      \"recipientType\": \"BUSINESS\",\n      \"companyName\": \"Overseas Inc\",\n      \"fields\": [\n        {\n          \"id\": \"COMPANY_NAME\",\n          \"type\": \"TEXT\",\n          \"value\": \"Overseas Inc\"\n        }\n      ]\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "83039409-cc5a-4f85-a375-6daadabf3765",
+                            "id": "9d613d8a-5603-40a8-9c33-f0a00f1d8d8b",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -1143,7 +1143,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "8a460db6-d1bd-41fa-8353-1fcdf4e60e5a",
+                            "id": "6c4f5a49-98d2-4e37-b092-9e3f73b11ab7",
                             "name": "Forbidden",
                             "originalRequest": {
                                 "url": {
@@ -1177,7 +1177,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "dceddf9a-e8fd-4e60-84a0-c66e29650a77",
+                            "id": "97836533-852f-4943-8b57-45e9d19b0958",
                             "name": "Internal Server Error",
                             "originalRequest": {
                                 "url": {
@@ -1214,7 +1214,7 @@
                     "event": []
                 },
                 {
-                    "id": "76f55b07-9056-4e36-ac52-9848b3e3a234",
+                    "id": "40f8a130-5775-4921-8442-ed3f22a41250",
                     "name": "Create Recipient",
                     "request": {
                         "name": "Create Recipient",
@@ -1246,7 +1246,7 @@
                         "auth": null,
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
                             "options": {
                                 "raw": {
                                     "language": "json"
@@ -1256,7 +1256,7 @@
                     },
                     "response": [
                         {
-                            "id": "6b1d4cc3-0764-4a37-b163-7e84c893b9ea",
+                            "id": "791f4387-0ff7-4a01-91ca-26f87bb8ba69",
                             "name": "Created",
                             "originalRequest": {
                                 "url": {
@@ -1293,7 +1293,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "9238f280-3c6c-4314-8e85-cf140c7870e2",
+                            "id": "98ff17a1-66ae-4c80-955e-63fdc0561ff2",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -1330,7 +1330,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "a358ac26-aa88-4ade-8310-2e1c593a623c",
+                            "id": "c09a484e-ac67-4a4b-9045-35a24f116147",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -1367,7 +1367,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "c0e3f31c-cbf9-4a0f-8378-fd701f44d8a9",
+                            "id": "dbdec907-c68b-440f-a29e-001576eb32ca",
                             "name": "Bad Request - Wrong senderId",
                             "originalRequest": {
                                 "url": {
@@ -1410,7 +1410,7 @@
                     }
                 },
                 {
-                    "id": "3b60ad96-90a1-4530-8704-070ffe983e0b",
+                    "id": "5005ae0f-a8ef-428c-b2d4-12f105b6fdd7",
                     "name": "Get Recipient",
                     "request": {
                         "name": "Get Recipient",
@@ -1448,7 +1448,7 @@
                     },
                     "response": [
                         {
-                            "id": "1426ea4d-8986-4a1d-bba9-df54b6ef4906",
+                            "id": "9be1ea11-b9f9-4130-b6ad-bfaca22542fc",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1481,12 +1481,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipientId\": \"6f5ba7ce-0d40-449e-81de-b12c618eb6dd\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"recipientType\": \"PERSON\",\n  \"firstName\": \"Moana\",\n  \"lastName\": \"Waialiki\",\n  \"fields\": []\n}",
+                            "body": "{\n  \"recipientId\": \"6f5ba7ce-0d40-449e-81de-b12c618eb6dd\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"recipientType\": \"PERSON\",\n  \"firstName\": \"Jane\",\n  \"lastName\": \"Doe\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Jane\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Doe\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "d065d2da-2b21-48ef-ac79-38fd0ff79e0f",
+                            "id": "cd49e65e-e622-47a6-95db-e1e3e3555bbf",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -1524,7 +1524,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "d889fe09-7076-4eeb-9d08-2d4ad4d5ada3",
+                            "id": "112df147-498a-49df-af44-4dcbf18b9db1",
                             "name": "Not Found",
                             "originalRequest": {
                                 "url": {
@@ -1565,7 +1565,7 @@
                     "event": []
                 },
                 {
-                    "id": "92c3f791-49e1-427c-a0a4-fbd5a12168ab",
+                    "id": "9f9640de-de8e-4043-ad71-3f54d7ed5453",
                     "name": "Update Recipient",
                     "request": {
                         "name": "Update Recipient",
@@ -1606,7 +1606,7 @@
                         "auth": null,
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
                             "options": {
                                 "raw": {
                                     "language": "json"
@@ -1616,7 +1616,7 @@
                     },
                     "response": [
                         {
-                            "id": "cc5aa3ef-10b6-410b-a9ba-6ec10fd6eeb7",
+                            "id": "437e9449-f258-47a3-a701-a6df874cc7ed",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1641,7 +1641,7 @@
                                 "method": "PUT",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"New First Name\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"New Last Name\"\n    }\n  ]\n}",
                                     "options": {
                                         "raw": {
                                             "language": "json"
@@ -1657,12 +1657,58 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipientId\": \"dolor veniam amet eiusmod reprehenderit\",\n  \"senderId\": \"amet officia eu ipsum consequat\",\n  \"firstName\": \"ex\",\n  \"lastName\": \"quis irure dolore\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "body": "{\n  \"recipientId\": \"6f5ba7ce-0d40-449e-81de-b12c618eb6dd\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"recipientType\": \"PERSON\",\n  \"firstName\": \"New First Name\",\n  \"lastName\": \"New Last Name\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"New First Name\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"New Last Name\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "48ffcfdc-aa79-4b86-86fc-8370eb1bbf05",
+                            "id": "1bfd9aec-683c-4744-b8bb-f4bbb382b69e",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        }
+                                    ]
+                                },
+                                "method": "PUT",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"New First Name\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"New Last Name\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Recipient Type' is required.\",\n    \"fieldId\": \"RecipientType\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'First Name' is required.\",\n    \"fieldId\": \"FIRST_NAME\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Last Name' is required.\",\n    \"fieldId\": \"LAST_NAME\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Sender Id' is required.\",\n    \"fieldId\": \"SenderId\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "d666166f-f915-49fc-871e-05f0ab3a24ed",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -1687,7 +1733,7 @@
                                 "method": "PUT",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                                    "raw": "{\n  \"recipientType\": \"PERSON\",\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"fields\": [\n    {\n      \"id\": \"FIRST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"New First Name\"\n    },\n    {\n      \"id\": \"LAST_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"New Last Name\"\n    }\n  ]\n}",
                                     "options": {
                                         "raw": {
                                             "language": "json"
@@ -1714,7 +1760,7 @@
                     }
                 },
                 {
-                    "id": "d24ea716-39cf-4e56-bfbf-1a6ff0859b33",
+                    "id": "84a7c048-923b-441c-918c-067f042f0555",
                     "name": "Delete Recipient",
                     "request": {
                         "name": "Delete Recipient",
@@ -1752,7 +1798,7 @@
                     },
                     "response": [
                         {
-                            "id": "2bf408df-3795-4e98-85af-b1da53ed2bea",
+                            "id": "23ccec7a-2c8e-4cd7-b34b-9e5596535f35",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1790,7 +1836,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "7f8e32e9-bfef-4e75-81c2-0e4b60e81ca7",
+                            "id": "d19417d2-7439-4cb9-8aeb-0fec68ff50fb",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -1828,7 +1874,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "17a09cf6-04ee-4b4f-b75b-8823d4cff7f5",
+                            "id": "102707c9-ee9b-4d54-829a-337bb0047f97",
                             "name": "Not Found",
                             "originalRequest": {
                                 "url": {
@@ -1861,7 +1907,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"RecipientNotFound\",\n    \"message\": \"Destinataria no encontrada.\",\n    \"description\": \"Recipient cannot be found.\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"RecipientNotFound\",\n    \"message\": \"Recipient not found.\",\n    \"description\": \"Recipient cannot be found.\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -1872,7 +1918,7 @@
             "event": []
         },
         {
-            "id": "0abea2ec-f4c8-4281-9b59-9e7477f8d2a1",
+            "id": "7134191b-4048-4770-9ccb-ebdac54453eb",
             "name": "Recipient Accounts",
             "description": {
                 "content": "",
@@ -1880,7 +1926,7 @@
             },
             "item": [
                 {
-                    "id": "14df37ab-9f8b-4986-a857-46d810948412",
+                    "id": "60fd5b8b-6143-432b-b505-691bcc150b0a",
                     "name": "Get Recipient Account Fields",
                     "request": {
                         "name": "Get Recipient Account Fields",
@@ -1934,7 +1980,7 @@
                     },
                     "response": [
                         {
-                            "id": "4001d60a-d5f3-4d55-948a-4a5f92608126",
+                            "id": "e2bbbf58-435c-4896-a64e-04e4688c657c",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -1980,7 +2026,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "079dcec9-035e-4e8d-aa02-2dcfcd1c2282",
+                            "id": "961e0d4e-db35-4206-af90-b4f1c7d057e3",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -2026,7 +2072,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "791d4117-73f9-4f9a-8a8d-0fc7b390db9e",
+                            "id": "bca7d679-f93f-4937-a48e-c66f1f416c27",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2075,7 +2121,7 @@
                     "event": []
                 },
                 {
-                    "id": "d93fc5ee-94b8-4ea6-a008-4bf51a7ed655",
+                    "id": "b4772da2-deb9-480f-a527-7c1294c18864",
                     "name": "Get Recipient Accounts",
                     "request": {
                         "name": "Get Recipient Accounts",
@@ -2114,7 +2160,7 @@
                     },
                     "response": [
                         {
-                            "id": "5a070e4e-6eaa-4dfd-9062-dba1b2979321",
+                            "id": "cada7a4c-b272-48aa-9ef6-7fa0dc8b3f9f",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -2153,7 +2199,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "1ae31fb8-000d-4210-a7ba-0d0dc669d8eb",
+                            "id": "3190e1ef-d812-4012-b9c3-de33171b6e25",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2192,7 +2238,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "13e80f35-97cf-47d5-9429-a11e4975679c",
+                            "id": "4d6197b6-7337-44d6-a065-d4c14bc87607",
                             "name": "Not Found",
                             "originalRequest": {
                                 "url": {
@@ -2234,7 +2280,7 @@
                     "event": []
                 },
                 {
-                    "id": "2be88727-ba34-4679-8f58-ea14dfe02aeb",
+                    "id": "8277679b-98ac-405b-900e-5d1999fe5e4a",
                     "name": "Create Recipient Account",
                     "request": {
                         "name": "Create Recipient Account",
@@ -2276,7 +2322,7 @@
                         "auth": null,
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n  \"dstCountryIso3Code\": \"<string>\",\n  \"dstCurrencyIso3Code\": \"<string>\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"senderId\": \"<string>\",\n  \"name\": \"<string>\",\n  \"accountNumber\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "raw": "{\n  \"dstCountryIso3Code\": \"<string>\",\n  \"dstCurrencyIso3Code\": \"<string>\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"accountNumber\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
                             "options": {
                                 "raw": {
                                     "language": "json"
@@ -2286,7 +2332,7 @@
                     },
                     "response": [
                         {
-                            "id": "b7b70391-6b60-44c9-832d-d569d6135f73",
+                            "id": "ffd256e1-4d25-4705-bcd4-75c18b414c53",
                             "name": "Created",
                             "originalRequest": {
                                 "url": {
@@ -2312,7 +2358,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"name\": \"My Account\",\n  \"accountNumber\": \"1\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"12345\"\n    }\n  ]\n}",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"accountNumber\": \"333000333\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Baink\"\n    }\n  ]\n}",
                                     "options": {
                                         "raw": {
                                             "language": "json"
@@ -2328,12 +2374,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipientAccountId\": \"e27c7395-b46a-4b9b-89fd-cd6a3da7fd85\",\n  \"accountNumber\": \"1\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"12345\"\n    }\n  ]\n}",
+                            "body": "{\n  \"recipientAccountId\": \"e27c7395-b46a-4b9b-89fd-cd6a3da7fd85\",\n  \"accountNumber\": \"333000333\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Baink\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "d814103e-f8b0-4bef-9e80-25b3a84a72bb",
+                            "id": "96e1b6f5-5623-4700-bbbc-dd6af93fa666",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -2359,7 +2405,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"name\": \"My Account\",\n  \"accountNumber\": \"1\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"12345\"\n    }\n  ]\n}",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"accountNumber\": \"333000333\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Baink\"\n    }\n  ]\n}",
                                     "options": {
                                         "raw": {
                                             "language": "json"
@@ -2375,12 +2421,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"Lorem ullamco laborum null\",\n    \"message\": \"in exercitation sint velit id\",\n    \"fieldId\": \"in exercitation Duis est\"\n  },\n  {\n    \"code\": \"nostrud nisi sed est repre\",\n    \"message\": \"sed irure cupidatat nisi in\",\n    \"fieldId\": \"ipsum deserunt mollit labore\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Destination Country ISO 3 Code' is required.\",\n    \"fieldId\": \"DestinationCountryISO3Code\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Destination Currency ISO 3 Code' is required.\",\n    \"fieldId\": \"DestinationCurrencyISO3Code\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Transfer Method' is required.\",\n    \"fieldId\": \"TransferMethod\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Account Number' is required.\",\n    \"fieldId\": \"AccountNumber\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Fields' is required.\",\n    \"fieldId\": \"Fields\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "485cd39e-bfa5-444b-88c9-9d934ff60bf9",
+                            "id": "fa9eab6d-abb1-4776-92b1-f73d04c29b07",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2406,7 +2452,7 @@
                                 "method": "POST",
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n  \"senderId\": \"55ef79b0-0f0f-459f-ad62-effcf516df7d\",\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"name\": \"My Account\",\n  \"accountNumber\": \"1\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"12345\"\n    }\n  ]\n}",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"accountNumber\": \"333000333\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Baink\"\n    }\n  ]\n}",
                                     "options": {
                                         "raw": {
                                             "language": "json"
@@ -2433,7 +2479,7 @@
                     }
                 },
                 {
-                    "id": "55f6503f-f752-4942-a8be-d78e1b66ee56",
+                    "id": "10a82886-d453-4ad3-b684-fb451acdead1",
                     "name": "Get Recipient Account",
                     "request": {
                         "name": "Get Recipient Account",
@@ -2480,7 +2526,7 @@
                     },
                     "response": [
                         {
-                            "id": "7f15f4b4-146f-45aa-b299-475fa93faf0b",
+                            "id": "60b1428b-d2fe-4572-9361-de2f8dd0016d",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -2522,12 +2568,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipientAccountId\": \"e27c7395-b46a-4b9b-89fd-cd6a3da7fd85\",\n  \"accountNumber\": \"98237498327489273\",\n  \"fields\": [\n    {\n      \"id\": \"bankId\",\n      \"type\": \"NUMBER\",\n      \"value\": \"78\"\n    },\n    {\n      \"id\": \"branchId\",\n      \"type\": \"NUMBER\",\n      \"value\": \"99\"\n    },\n    {\n      \"id\": \"accountNumber\",\n      \"type\": \"TEXT\",\n      \"value\": \"1234556677\"\n    }\n  ]\n}",
+                            "body": "{\n  \"recipientAccountId\": \"e27c7395-b46a-4b9b-89fd-cd6a3da7fd85\",\n  \"accountNumber\": \"333000333\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Baink\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "00da9686-b4ca-4a87-abe7-60b3ccb3f822",
+                            "id": "f44fb224-4caa-47ef-b3b0-435a34565bea",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -2569,12 +2615,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"Lorem ullamco laborum null\",\n    \"message\": \"in exercitation sint velit id\",\n    \"fieldId\": \"in exercitation Duis est\"\n  },\n  {\n    \"code\": \"nostrud nisi sed est repre\",\n    \"message\": \"sed irure cupidatat nisi in\",\n    \"fieldId\": \"ipsum deserunt mollit labore\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"tempor Duis\",\n    \"message\": \"dolore do veniam\",\n    \"fieldId\": \"do deserunt\"\n  },\n  {\n    \"code\": \"cillum officia\",\n    \"message\": \"eu culpa\",\n    \"fieldId\": \"eiusmod ipsum\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "41ad4965-f565-42cd-924c-8fefb5e2ef46",
+                            "id": "a55c8b13-7482-4d40-92b7-170766bcd178",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2619,12 +2665,59 @@
                             "body": "{\n  \"code\": \"000\",\n  \"message\": \"Something went wrong!\",\n  \"description\": \"Unauthorized\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "840fc336-0d00-4aa0-8257-ebe824c03480",
+                            "name": "Not Found",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "recipients",
+                                        ":recipientId",
+                                        "accounts",
+                                        ":accId"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "recipientId",
+                                            "description": "(Required) The recipient identifier"
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "accId",
+                                            "description": "(Required) Recipient account identifier."
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Not Found",
+                            "code": 404,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "[\n  {\n    \"code\": \"tempor Duis\",\n    \"message\": \"dolore do veniam\",\n    \"fieldId\": \"do deserunt\"\n  },\n  {\n    \"code\": \"cillum officia\",\n    \"message\": \"eu culpa\",\n    \"fieldId\": \"eiusmod ipsum\"\n  }\n]",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
                         }
                     ],
                     "event": []
                 },
                 {
-                    "id": "239e33ef-48b7-4693-96d2-16ee0ce3e385",
+                    "id": "128d6312-2468-4058-8232-e0ba85c1f739",
                     "name": "Update Recipient Account",
                     "request": {
                         "name": "Update Recipient Account",
@@ -2662,16 +2755,29 @@
                         },
                         "header": [
                             {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
                                 "key": "Accept",
                                 "value": "application/json"
                             }
                         ],
                         "method": "PUT",
-                        "auth": null
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"dstCountryIso3Code\": \"<string>\",\n  \"dstCurrencyIso3Code\": \"<string>\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"accountNumber\": \"<string>\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
                     },
                     "response": [
                         {
-                            "id": "822168dc-7f90-48b4-8547-9a7cd78685be",
+                            "id": "8e1dcda5-8046-4ee2-86fb-4b1e6760715d",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -2703,7 +2809,15 @@
                                     ]
                                 },
                                 "method": "PUT",
-                                "body": {}
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"accountNumber\": \"333000333\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Baink\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
                             },
                             "status": "OK",
                             "code": 200,
@@ -2713,12 +2827,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n  \"recipientAccountId\": \"in proident esse\",\n  \"accountNumber\": \"ipsum officia\",\n  \"fields\": [\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"type\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
+                            "body": "{\n  \"recipientAccountId\": \"aute nostr\",\n  \"accountNumber\": \"ex quis\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"<string>\"\n    }\n  ]\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "af098efd-8aa5-491f-9ae3-f67fa926315d",
+                            "id": "7608e7ae-e916-46ea-af5c-42f14302592a",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -2750,7 +2864,15 @@
                                     ]
                                 },
                                 "method": "PUT",
-                                "body": {}
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"accountNumber\": \"333000333\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Baink\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
                             },
                             "status": "Bad Request",
                             "code": 400,
@@ -2760,12 +2882,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"Lorem ullamco laborum null\",\n    \"message\": \"in exercitation sint velit id\",\n    \"fieldId\": \"in exercitation Duis est\"\n  },\n  {\n    \"code\": \"nostrud nisi sed est repre\",\n    \"message\": \"sed irure cupidatat nisi in\",\n    \"fieldId\": \"ipsum deserunt mollit labore\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Destination Country ISO 3 Code' is required.\",\n    \"fieldId\": \"DestinationCountryISO3Code\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Destination Currency ISO 3 Code' is required.\",\n    \"fieldId\": \"DestinationCurrencyISO3Code\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Transfer Method' is required.\",\n    \"fieldId\": \"TransferMethod\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Account Number' is required.\",\n    \"fieldId\": \"AccountNumber\"\n  },\n  {\n    \"code\": \"NotEmptyValidator\",\n    \"message\": \"'Fields' is required.\",\n    \"fieldId\": \"Fields\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "9591ed7a-eea3-4b54-adee-c28e75db8b23",
+                            "id": "e2f2f0a8-ecf9-478e-af02-765bd95122f7",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -2797,7 +2919,15 @@
                                     ]
                                 },
                                 "method": "PUT",
-                                "body": {}
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"dstCountryIso3Code\": \"IND\",\n  \"dstCurrencyIso3Code\": \"INR\",\n  \"transferMethod\": \"BANK_ACCOUNT\",\n  \"accountNumber\": \"333000333\",\n  \"fields\": [\n    {\n      \"id\": \"BANK_NAME\",\n      \"type\": \"TEXT\",\n      \"value\": \"Baink\"\n    }\n  ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
                             },
                             "status": "Unauthorized",
                             "code": 401,
@@ -2812,10 +2942,13 @@
                             "_postman_previewlanguage": "json"
                         }
                     ],
-                    "event": []
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
                 },
                 {
-                    "id": "1ba40861-a065-47d6-a206-30a0d4be518b",
+                    "id": "b510b24b-0abc-4491-a7e1-cd94971bbd68",
                     "name": "Delete Recipient Account",
                     "request": {
                         "name": "Delete Recipient Account",
@@ -2862,7 +2995,7 @@
                     },
                     "response": [
                         {
-                            "id": "d1a9d034-9c5c-4a3f-b403-b13a40f21d4c",
+                            "id": "676c0e1c-66f5-4db1-986a-e9e54cccff59",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -2909,7 +3042,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "230edb0d-7e1c-4b80-9860-76074eebbad4",
+                            "id": "8e5d1534-3533-448b-83a6-da126d76d8f3",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -2951,12 +3084,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"Lorem ullamco laborum null\",\n    \"message\": \"in exercitation sint velit id\",\n    \"fieldId\": \"in exercitation Duis est\"\n  },\n  {\n    \"code\": \"nostrud nisi sed est repre\",\n    \"message\": \"sed irure cupidatat nisi in\",\n    \"fieldId\": \"ipsum deserunt mollit labore\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"tempor Duis\",\n    \"message\": \"dolore do veniam\",\n    \"fieldId\": \"do deserunt\"\n  },\n  {\n    \"code\": \"cillum officia\",\n    \"message\": \"eu culpa\",\n    \"fieldId\": \"eiusmod ipsum\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "820f2644-1e26-4bd9-8adf-2c36d36168b4",
+                            "id": "e6d201ed-aa75-44ff-b79e-438092f2a9c4",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -3009,7 +3142,7 @@
             "event": []
         },
         {
-            "id": "3a23571a-a569-496e-8463-ba28d9c99934",
+            "id": "610fb708-743b-463c-a1a0-1ba389969ff3",
             "name": "Transfers",
             "description": {
                 "content": "",
@@ -3017,12 +3150,12 @@
             },
             "item": [
                 {
-                    "id": "e6e4483d-5bd3-4927-b6ca-3bca9cc2bf81",
+                    "id": "27720c7d-f82f-4e29-b525-328a1d6490c0",
                     "name": "Get Transfer Fields",
                     "request": {
                         "name": "Get Transfer Fields",
                         "description": {
-                            "content": "This operation returns required transfer fields based on .",
+                            "content": "Given country and currency codes and a transfer method, this operation returns required fields for calling Execute Transfer.",
                             "type": "text/plain"
                         },
                         "url": {
@@ -3065,7 +3198,7 @@
                     },
                     "response": [
                         {
-                            "id": "cf88ea66-cf6a-4542-8d36-27b8f85a6de5",
+                            "id": "4f2890f6-c03d-4c6f-bbcf-62c1ba6d5588",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -3107,7 +3240,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "cc4e6882-1471-49fa-aa52-38cd3de8bc23",
+                            "id": "deed0aeb-c378-4130-99ee-8cb608b285b8",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -3149,7 +3282,7 @@
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "e5c11d00-6125-4765-8e04-d7da60d18df4",
+                            "id": "221e4ed1-915d-4290-b540-e7282049d213",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -3194,7 +3327,7 @@
                     "event": []
                 },
                 {
-                    "id": "553fb18c-b4dd-4160-bb50-7a13f1c39836",
+                    "id": "a3254439-8e7b-4e8f-bbc7-b13c40effd31",
                     "name": "Execute Transfer",
                     "request": {
                         "name": "Execute Transfer",
@@ -3236,7 +3369,7 @@
                     },
                     "response": [
                         {
-                            "id": "6c16c5e1-bedc-49b4-92f8-7c912444f8aa",
+                            "id": "4fef10cf-8ac7-4bfc-9017-af2777646665",
                             "name": "Success",
                             "originalRequest": {
                                 "url": {
@@ -3273,7 +3406,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "28010f8d-28be-4716-952e-7949df32a76b",
+                            "id": "01ee4f9d-7689-43bb-a3de-91b0c533d65c",
                             "name": "Bad Request",
                             "originalRequest": {
                                 "url": {
@@ -3305,12 +3438,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n  {\n    \"code\": \"aliquip\",\n    \"message\": \"aliqua pariatur cillum in\",\n    \"fieldId\": \"veniam mollit ad aliquip\"\n  },\n  {\n    \"code\": \"laboris aliqua esse consequat\",\n    \"message\": \"quis adipisicing aliqua elit\",\n    \"fieldId\": \"et eiusmod irure enim\"\n  }\n]",
+                            "body": "[\n  {\n    \"code\": \"dolor consectetur enim deserunt\",\n    \"message\": \"incididunt velit esse do est\",\n    \"fieldId\": \"dolor in irure ex quis\"\n  },\n  {\n    \"code\": \"ea eu\",\n    \"message\": \"qui dolore in veniam\",\n    \"fieldId\": \"in ad reprehenderit Duis\"\n  }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "edaef3f3-9f27-4bce-aa40-901fe94951ca",
+                            "id": "d1b8ba1c-c096-4bda-9f7f-618e50247d1c",
                             "name": "Unauthorized",
                             "originalRequest": {
                                 "url": {
@@ -3374,7 +3507,7 @@
         ]
     },
     "info": {
-        "_postman_id": "f87d6723-d07c-4712-a0b4-b5c4c8db7a40",
+        "_postman_id": "9eba4a2e-5dd8-4152-993d-dba1585451dd",
         "name": "API Reference",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {
